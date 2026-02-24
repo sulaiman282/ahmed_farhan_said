@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": "AHMED FARHAN SAID AL-MARSHOUD FOR GENERAL CONTRACTING EST.",
+    "subtitle": "Your Trusted Partner in Manpower Solutions and General Contracting Services",
+    "ctaText": "Get Started",
+    "ctaLink": "/en/contact",
+    "backgroundImage": "/images/hero/main.jpg"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "With years of experience in the Saudi Arabian market, we deliver exceptional manpower solutions and contracting services with unwavering commitment to quality and client satisfaction.",
+    "yearsOfExperience": 15
+  },
+  "whyChoose": {
+    "title": "Why Choose Us",
+    "items": [
+      {
+        "icon": "shield-check",
+        "title": "Licensed & Certified",
+        "description": "Fully licensed and certified to operate in Saudi Arabia with all necessary permits and compliance."
+      },
+      {
+        "icon": "users",
+        "title": "Experienced Team",
+        "description": "Our team brings decades of combined experience in manpower and contracting services."
+      },
+      {
+        "icon": "clock",
+        "title": "Timely Delivery",
+        "description": "We pride ourselves on meeting deadlines and delivering projects on schedule."
+      },
+      {
+        "icon": "star",
+        "title": "Quality Assurance",
+        "description": "Rigorous quality control processes ensure excellence in every project we undertake."
+      }
+    ]
+  },
+  "servicesPreview": {
+    "title": "Our Services",
+    "services": [
+      {
+        "id": "manpower-supply",
+        "icon": "users-group",
+        "title": "Manpower Supply",
+        "description": "Comprehensive workforce solutions tailored to your business needs.",
+        "link": "/en/services#manpower-supply"
+      },
+      {
+        "id": "recruitment",
+        "icon": "user-plus",
+        "title": "Recruitment Services",
+        "description": "Professional recruitment and staffing solutions for all industries.",
+        "link": "/en/services#recruitment"
+      },
+      {
+        "id": "general-contracting",
+        "icon": "building",
+        "title": "General Contracting",
+        "description": "Complete construction and contracting services for commercial and residential projects.",
+        "link": "/en/services#general-contracting"
+      },
+      {
+        "id": "project-management",
+        "icon": "clipboard-check",
+        "title": "Project Management",
+        "description": "End-to-end project management ensuring successful delivery.",
+        "link": "/en/services#project-management"
+      },
+      {
+        "id": "maintenance",
+        "icon": "wrench",
+        "title": "Maintenance Services",
+        "description": "Ongoing maintenance and facility management solutions.",
+        "link": "/en/services#maintenance"
+      },
+      {
+        "id": "consulting",
+        "icon": "lightbulb",
+        "title": "Consulting Services",
+        "description": "Expert consulting for workforce optimization and project planning.",
+        "link": "/en/services#consulting"
+      }
+    ],
+    "viewAllLink": "/en/services"
+  },
+  "testimonialsPreview": {
+    "title": "What Our Clients Say",
+    "viewAllLink": "/en/testimonials"
+  },
+  "galleryPreview": {
+    "title": "Our Projects",
+    "viewAllLink": "/en/portfolio"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "description": "Contact us today to discuss your manpower and contracting needs. Our team is ready to help you succeed.",
+    "buttonText": "Contact Us Now",
+    "buttonLink": "/en/contact"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": "مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة",
+    "subtitle": "شريكك الموثوق في حلول القوى العاملة وخدمات المقاولات العامة",
+    "ctaText": "ابدأ الآن",
+    "ctaLink": "/ar/contact",
+    "backgroundImage": "/images/hero/main.jpg"
+  },
+  "about": {
+    "title": "من نحن",
+    "description": "مع سنوات من الخبرة في السوق السعودي، نقدم حلول قوى عاملة استثنائية وخدمات مقاولات مع التزام ثابت بالجودة ورضا العملاء.",
+    "yearsOfExperience": 15
+  },
+  "whyChoose": {
+    "title": "لماذا تختارنا",
+    "items": [
+      {
+        "icon": "shield-check",
+        "title": "مرخص ومعتمد",
+        "description": "مرخصون ومعتمدون بالكامل للعمل في المملكة العربية السعودية مع جميع التصاريح والامتثال اللازم."
+      },
+      {
+        "icon": "users",
+        "title": "فريق ذو خبرة",
+        "description": "يجلب فريقنا عقودًا من الخبرة المشتركة في خدمات القوى العاملة والمقاولات."
+      },
+      {
+        "icon": "clock",
+        "title": "التسليم في الوقت المحدد",
+        "description": "نفخر بالالتزام بالمواعيد النهائية وتسليم المشاريع في الموعد المحدد."
+      },
+      {
+        "icon": "star",
+        "title": "ضمان الجودة",
+        "description": "عمليات صارمة لمراقبة الجودة تضمن التميز في كل مشروع نقوم به."
+      }
+    ]
+  },
+  "servicesPreview": {
+    "title": "خدماتنا",
+    "services": [
+      {
+        "id": "manpower-supply",
+        "icon": "users-group",
+        "title": "توريد القوى العاملة",
+        "description": "حلول شاملة للقوى العاملة مصممة خصيصًا لاحتياجات عملك.",
+        "link": "/ar/services#manpower-supply"
+      },
+      {
+        "id": "recruitment",
+        "icon": "user-plus",
+        "title": "خدمات التوظيف",
+        "description": "حلول توظيف وتوظيف احترافية لجميع الصناعات.",
+        "link": "/ar/services#recruitment"
+      },
+      {
+        "id": "general-contracting",
+        "icon": "building",
+        "title": "المقاولات العامة",
+        "description": "خدمات بناء ومقاولات كاملة للمشاريع التجارية والسكنية.",
+        "link": "/ar/services#general-contracting"
+      },
+      {
+        "id": "project-management",
+        "icon": "clipboard-check",
+        "title": "إدارة المشاريع",
+        "description": "إدارة شاملة للمشاريع تضمن التسليم الناجح.",
+        "link": "/ar/services#project-management"
+      },
+      {
+        "id": "maintenance",
+        "icon": "wrench",
+        "title": "خدمات الصيانة",
+        "description": "حلول صيانة وإدارة مرافق مستمرة.",
+        "link": "/ar/services#maintenance"
+      },
+      {
+        "id": "consulting",
+        "icon": "lightbulb",
+        "title": "خدمات الاستشارات",
+        "description": "استشارات خبراء لتحسين القوى العاملة وتخطيط المشاريع.",
+        "link": "/ar/services#consulting"
+      }
+    ],
+    "viewAllLink": "/ar/services"
+  },
+  "testimonialsPreview": {
+    "title": "ماذا يقول عملاؤنا",
+    "viewAllLink": "/ar/testimonials"
+  },
+  "galleryPreview": {
+    "title": "مشاريعنا",
+    "viewAllLink": "/ar/portfolio"
+  },
+  "cta": {
+    "title": "هل أنت مستعد لبدء مشروعك؟",
+    "description": "اتصل بنا اليوم لمناقشة احتياجاتك من القوى العاملة والمقاولات. فريقنا جاهز لمساعدتك على النجاح.",
+    "buttonText": "اتصل بنا الآن",
+    "buttonLink": "/ar/contact"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "pageTitle": "Our Portfolio",
+  "pageDescription": "Explore our completed projects showcasing our expertise in manpower solutions and general contracting.",
+  "categories": [
+    "All",
+    "Commercial",
+    "Residential",
+    "Industrial",
+    "Infrastructure"
+  ],
+  "items": [
+    {
+      "id": "project-1",
+      "title": "Riyadh Commercial Complex",
+      "category": "Commercial",
+      "thumbnail": "/images/portfolio/project-1-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-1-1.jpg",
+        "/images/portfolio/project-1-2.jpg",
+        "/images/portfolio/project-1-3.jpg"
+      ],
+      "description": "A modern commercial complex featuring retail spaces, offices, and parking facilities spanning 50,000 square meters.",
+      "completionDate": "2023-06",
+      "client": "Riyadh Development Company",
+      "location": "Riyadh, Saudi Arabia"
+    },
+    {
+      "id": "project-2",
+      "title": "Jeddah Residential Towers",
+      "category": "Residential",
+      "thumbnail": "/images/portfolio/project-2-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-2-1.jpg",
+        "/images/portfolio/project-2-2.jpg"
+      ],
+      "description": "Twin residential towers with 200 luxury apartments, complete with amenities and underground parking.",
+      "completionDate": "2023-03",
+      "client": "Jeddah Housing Authority",
+      "location": "Jeddah, Saudi Arabia"
+    },
+    {
+      "id": "project-3",
+      "title": "Dammam Industrial Facility",
+      "category": "Industrial",
+      "thumbnail": "/images/portfolio/project-3-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-3-1.jpg",
+        "/images/portfolio/project-3-2.jpg",
+        "/images/portfolio/project-3-3.jpg",
+        "/images/portfolio/project-3-4.jpg"
+      ],
+      "description": "State-of-the-art manufacturing facility with warehouse and administrative offices.",
+      "completionDate": "2022-12",
+      "client": "Saudi Manufacturing Co.",
+      "location": "Dammam, Saudi Arabia"
+    },
+    {
+      "id": "project-4",
+      "title": "Makkah Hotel Renovation",
+      "category": "Commercial",
+      "thumbnail": "/images/portfolio/project-4-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-4-1.jpg",
+        "/images/portfolio/project-4-2.jpg"
+      ],
+      "description": "Complete renovation of a 150-room hotel including guest rooms, lobby, and dining facilities.",
+      "completionDate": "2023-09",
+      "client": "Makkah Hospitality Group",
+      "location": "Makkah, Saudi Arabia"
+    },
+    {
+      "id": "project-5",
+      "title": "Al-Khobar Villa Community",
+      "category": "Residential",
+      "thumbnail": "/images/portfolio/project-5-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-5-1.jpg",
+        "/images/portfolio/project-5-2.jpg",
+        "/images/portfolio/project-5-3.jpg"
+      ],
+      "description": "Gated community of 50 luxury villas with landscaping and community facilities.",
+      "completionDate": "2023-01",
+      "client": "Eastern Province Development",
+      "location": "Al-Khobar, Saudi Arabia"
+    },
+    {
+      "id": "project-6",
+      "title": "Riyadh Metro Station",
+      "category": "Infrastructure",
+      "thumbnail": "/images/portfolio/project-6-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-6-1.jpg",
+        "/images/portfolio/project-6-2.jpg"
+      ],
+      "description": "Construction of metro station facilities including platforms, ticketing areas, and access points.",
+      "completionDate": "2022-08",
+      "client": "Riyadh Metro Authority",
+      "location": "Riyadh, Saudi Arabia"
+    },
+    {
+      "id": "project-7",
+      "title": "Jubail Warehouse Complex",
+      "category": "Industrial",
+      "thumbnail": "/images/portfolio/project-7-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-7-1.jpg",
+        "/images/portfolio/project-7-2.jpg",
+        "/images/portfolio/project-7-3.jpg"
+      ],
+      "description": "Large-scale warehouse and logistics facility with modern storage systems.",
+      "completionDate": "2023-04",
+      "client": "Jubail Logistics Co.",
+      "location": "Jubail, Saudi Arabia"
+    },
+    {
+      "id": "project-8",
+      "title": "Medina Shopping Mall",
+      "category": "Commercial",
+      "thumbnail": "/images/portfolio/project-8-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-8-1.jpg",
+        "/images/portfolio/project-8-2.jpg",
+        "/images/portfolio/project-8-3.jpg"
+      ],
+      "description": "Modern shopping mall with 100+ retail units, food court, and entertainment facilities.",
+      "completionDate": "2022-11",
+      "client": "Medina Retail Development",
+      "location": "Medina, Saudi Arabia"
+    },
+    {
+      "id": "project-9",
+      "title": "Yanbu Road Infrastructure",
+      "category": "Infrastructure",
+      "thumbnail": "/images/portfolio/project-9-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-9-1.jpg",
+        "/images/portfolio/project-9-2.jpg"
+      ],
+      "description": "Road construction and infrastructure development including utilities and landscaping.",
+      "completionDate": "2023-07",
+      "client": "Yanbu Municipality",
+      "location": "Yanbu, Saudi Arabia"
+    },
+    {
+      "id": "project-10",
+      "title": "Abha Resort Development",
+      "category": "Commercial",
+      "thumbnail": "/images/portfolio/project-10-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-10-1.jpg",
+        "/images/portfolio/project-10-2.jpg",
+        "/images/portfolio/project-10-3.jpg"
+      ],
+      "description": "Tourist resort with chalets, restaurant, and recreational facilities.",
+      "completionDate": "2023-05",
+      "client": "Asir Tourism Development",
+      "location": "Abha, Saudi Arabia"
+    },
+    {
+      "id": "project-11",
+      "title": "Taif Residential Compound",
+      "category": "Residential",
+      "thumbnail": "/images/portfolio/project-11-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-11-1.jpg",
+        "/images/portfolio/project-11-2.jpg"
+      ],
+      "description": "Residential compound with 80 units, swimming pool, gym, and children's play area.",
+      "completionDate": "2022-10",
+      "client": "Taif Housing Co.",
+      "location": "Taif, Saudi Arabia"
+    },
+    {
+      "id": "project-12",
+      "title": "Khamis Mushait Factory",
+      "category": "Industrial",
+      "thumbnail": "/images/portfolio/project-12-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-12-1.jpg",
+        "/images/portfolio/project-12-2.jpg",
+        "/images/portfolio/project-12-3.jpg"
+      ],
+      "description": "Industrial manufacturing facility with production lines and quality control areas.",
+      "completionDate": "2023-02",
+      "client": "Southern Industries Ltd.",
+      "location": "Khamis Mushait, Saudi Arabia"
+    }
+  ]
+}

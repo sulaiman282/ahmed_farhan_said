@@ -1,0 +1,62 @@
+{
+  "mainMenu": [
+    {
+      "label": "Home",
+      "href": "/en"
+    },
+    {
+      "label": "About",
+      "href": "/en/about"
+    },
+    {
+      "label": "Services",
+      "href": "/en/services"
+    },
+    {
+      "label": "Portfolio",
+      "href": "/en/portfolio"
+    },
+    {
+      "label": "Testimonials",
+      "href": "/en/testimonials"
+    },
+    {
+      "label": "Contact",
+      "href": "/en/contact"
+    }
+  ],
+  "footerMenu": [
+    {
+      "label": "Home",
+      "href": "/en"
+    },
+    {
+      "label": "About Us",
+      "href": "/en/about"
+    },
+    {
+      "label": "Services",
+      "href": "/en/services"
+    },
+    {
+      "label": "Portfolio",
+      "href": "/en/portfolio"
+    },
+    {
+      "label": "Careers",
+      "href": "/en/careers"
+    },
+    {
+      "label": "Contact",
+      "href": "/en/contact"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/en/privacy"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "/en/terms"
+    }
+  ]
+}

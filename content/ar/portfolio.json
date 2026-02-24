@@ -1,0 +1,189 @@
+{
+  "pageTitle": "أعمالنا",
+  "pageDescription": "استكشف مشاريعنا المنجزة التي تعرض خبرتنا في حلول القوى العاملة والمقاولات العامة.",
+  "categories": [
+    "الكل",
+    "تجاري",
+    "سكني",
+    "صناعي",
+    "بنية تحتية"
+  ],
+  "items": [
+    {
+      "id": "project-1",
+      "title": "مجمع الرياض التجاري",
+      "category": "تجاري",
+      "thumbnail": "/images/portfolio/project-1-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-1-1.jpg",
+        "/images/portfolio/project-1-2.jpg",
+        "/images/portfolio/project-1-3.jpg"
+      ],
+      "description": "مجمع تجاري حديث يضم مساحات للبيع بالتجزئة ومكاتب ومرافق لوقوف السيارات تمتد على مساحة 50,000 متر مربع.",
+      "completionDate": "2023-06",
+      "client": "شركة تطوير الرياض",
+      "location": "الرياض، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-2",
+      "title": "أبراج جدة السكنية",
+      "category": "سكني",
+      "thumbnail": "/images/portfolio/project-2-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-2-1.jpg",
+        "/images/portfolio/project-2-2.jpg"
+      ],
+      "description": "برجان سكنيان توأم يضمان 200 شقة فاخرة، مع مرافق كاملة ومواقف سيارات تحت الأرض.",
+      "completionDate": "2023-03",
+      "client": "هيئة الإسكان بجدة",
+      "location": "جدة، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-3",
+      "title": "منشأة الدمام الصناعية",
+      "category": "صناعي",
+      "thumbnail": "/images/portfolio/project-3-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-3-1.jpg",
+        "/images/portfolio/project-3-2.jpg",
+        "/images/portfolio/project-3-3.jpg",
+        "/images/portfolio/project-3-4.jpg"
+      ],
+      "description": "منشأة تصنيع حديثة مع مستودع ومكاتب إدارية.",
+      "completionDate": "2022-12",
+      "client": "شركة التصنيع السعودية",
+      "location": "الدمام، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-4",
+      "title": "تجديد فندق مكة",
+      "category": "تجاري",
+      "thumbnail": "/images/portfolio/project-4-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-4-1.jpg",
+        "/images/portfolio/project-4-2.jpg"
+      ],
+      "description": "تجديد كامل لفندق من 150 غرفة بما في ذلك غرف الضيوف والردهة ومرافق تناول الطعام.",
+      "completionDate": "2023-09",
+      "client": "مجموعة مكة للضيافة",
+      "location": "مكة المكرمة، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-5",
+      "title": "مجتمع فلل الخبر",
+      "category": "سكني",
+      "thumbnail": "/images/portfolio/project-5-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-5-1.jpg",
+        "/images/portfolio/project-5-2.jpg",
+        "/images/portfolio/project-5-3.jpg"
+      ],
+      "description": "مجتمع مسور من 50 فيلا فاخرة مع تنسيق حدائق ومرافق مجتمعية.",
+      "completionDate": "2023-01",
+      "client": "تطوير المنطقة الشرقية",
+      "location": "الخبر، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-6",
+      "title": "محطة مترو الرياض",
+      "category": "بنية تحتية",
+      "thumbnail": "/images/portfolio/project-6-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-6-1.jpg",
+        "/images/portfolio/project-6-2.jpg"
+      ],
+      "description": "بناء مرافق محطة المترو بما في ذلك الأرصفة ومناطق التذاكر ونقاط الوصول.",
+      "completionDate": "2022-08",
+      "client": "هيئة مترو الرياض",
+      "location": "الرياض، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-7",
+      "title": "مجمع مستودعات الجبيل",
+      "category": "صناعي",
+      "thumbnail": "/images/portfolio/project-7-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-7-1.jpg",
+        "/images/portfolio/project-7-2.jpg",
+        "/images/portfolio/project-7-3.jpg"
+      ],
+      "description": "منشأة مستودعات ولوجستيات واسعة النطاق مع أنظمة تخزين حديثة.",
+      "completionDate": "2023-04",
+      "client": "شركة الجبيل للوجستيات",
+      "location": "الجبيل، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-8",
+      "title": "مول المدينة التجاري",
+      "category": "تجاري",
+      "thumbnail": "/images/portfolio/project-8-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-8-1.jpg",
+        "/images/portfolio/project-8-2.jpg",
+        "/images/portfolio/project-8-3.jpg"
+      ],
+      "description": "مركز تسوق حديث يضم أكثر من 100 وحدة تجارية ومنطقة طعام ومرافق ترفيهية.",
+      "completionDate": "2022-11",
+      "client": "تطوير التجزئة بالمدينة",
+      "location": "المدينة المنورة، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-9",
+      "title": "بنية تحتية لطرق ينبع",
+      "category": "بنية تحتية",
+      "thumbnail": "/images/portfolio/project-9-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-9-1.jpg",
+        "/images/portfolio/project-9-2.jpg"
+      ],
+      "description": "بناء الطرق وتطوير البنية التحتية بما في ذلك المرافق وتنسيق الحدائق.",
+      "completionDate": "2023-07",
+      "client": "بلدية ينبع",
+      "location": "ينبع، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-10",
+      "title": "تطوير منتجع أبها",
+      "category": "تجاري",
+      "thumbnail": "/images/portfolio/project-10-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-10-1.jpg",
+        "/images/portfolio/project-10-2.jpg",
+        "/images/portfolio/project-10-3.jpg"
+      ],
+      "description": "منتجع سياحي مع شاليهات ومطعم ومرافق ترفيهية.",
+      "completionDate": "2023-05",
+      "client": "تطوير السياحة بعسير",
+      "location": "أبها، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-11",
+      "title": "مجمع الطائف السكني",
+      "category": "سكني",
+      "thumbnail": "/images/portfolio/project-11-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-11-1.jpg",
+        "/images/portfolio/project-11-2.jpg"
+      ],
+      "description": "مجمع سكني يضم 80 وحدة، مع مسبح وصالة رياضية ومنطقة ألعاب للأطفال.",
+      "completionDate": "2022-10",
+      "client": "شركة الإسكان بالطائف",
+      "location": "الطائف، المملكة العربية السعودية"
+    },
+    {
+      "id": "project-12",
+      "title": "مصنع خميس مشيط",
+      "category": "صناعي",
+      "thumbnail": "/images/portfolio/project-12-thumb.jpg",
+      "images": [
+        "/images/portfolio/project-12-1.jpg",
+        "/images/portfolio/project-12-2.jpg",
+        "/images/portfolio/project-12-3.jpg"
+      ],
+      "description": "منشأة تصنيع صناعية مع خطوط إنتاج ومناطق مراقبة الجودة.",
+      "completionDate": "2023-02",
+      "client": "الصناعات الجنوبية المحدودة",
+      "location": "خميس مشيط، المملكة العربية السعودية"
+    }
+  ]
+}

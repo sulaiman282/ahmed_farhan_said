@@ -1,0 +1,62 @@
+{
+  "mainMenu": [
+    {
+      "label": "الرئيسية",
+      "href": "/ar"
+    },
+    {
+      "label": "من نحن",
+      "href": "/ar/about"
+    },
+    {
+      "label": "الخدمات",
+      "href": "/ar/services"
+    },
+    {
+      "label": "المشاريع",
+      "href": "/ar/portfolio"
+    },
+    {
+      "label": "آراء العملاء",
+      "href": "/ar/testimonials"
+    },
+    {
+      "label": "اتصل بنا",
+      "href": "/ar/contact"
+    }
+  ],
+  "footerMenu": [
+    {
+      "label": "الرئيسية",
+      "href": "/ar"
+    },
+    {
+      "label": "من نحن",
+      "href": "/ar/about"
+    },
+    {
+      "label": "الخدمات",
+      "href": "/ar/services"
+    },
+    {
+      "label": "المشاريع",
+      "href": "/ar/portfolio"
+    },
+    {
+      "label": "الوظائف",
+      "href": "/ar/careers"
+    },
+    {
+      "label": "اتصل بنا",
+      "href": "/ar/contact"
+    },
+    {
+      "label": "سياسة الخصوصية",
+      "href": "/ar/privacy"
+    },
+    {
+      "label": "شروط الخدمة",
+      "href": "/ar/terms"
+    }
+  ]
+}

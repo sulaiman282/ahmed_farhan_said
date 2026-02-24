@@ -1,0 +1,68 @@
+{
+  "pageTitle": "Careers",
+  "pageDescription": "Join our team and build your career with a leading contracting company in Saudi Arabia.",
+  "culture": {
+    "title": "Why Work With Us",
+    "description": "We offer a dynamic work environment with opportunities for growth and development.",
+    "benefits": [
+      "Competitive salary packages",
+      "Health insurance coverage",
+      "Annual leave and holidays",
+      "Professional development opportunities",
+      "Safe and supportive work environment",
+      "Career advancement opportunities"
+    ]
+  },
+  "openings": [
+    {
+      "id": "job-1",
+      "title": "Project Manager",
+      "location": "Riyadh, Saudi Arabia",
+      "type": "full-time",
+      "description": "We are seeking an experienced Project Manager to oversee construction projects.",
+      "requirements": [
+        "Bachelor's degree in Civil Engineering or related field",
+        "5+ years of project management experience",
+        "PMP certification preferred",
+        "Strong leadership and communication skills"
+      ],
+      "benefits": [
+        "Competitive salary",
+        "Health insurance",
+        "Annual bonus",
+        "Professional development"
+      ],
+      "postedDate": "2024-01-15"
+    }
+  ],
+  "noOpeningsMessage": "We currently have no open positions, but we're always looking for talented individuals. Please submit your resume for future opportunities.",
+  "applicationForm": {
+    "title": "Apply Now",
+    "fields": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number"
+      },
+      "positionInterest": {
+        "label": "Position of Interest",
+        "placeholder": "Enter the position you're applying for"
+      },
+      "resume": {
+        "label": "Resume/CV",
+        "acceptedFormats": "PDF or DOCX (Max 5MB)",
+        "maxSize": "5MB"
+      }
+    },
+    "submitButton": "Submit Application",
+    "successMessage": "Thank you for your application! We will review it and contact you if there's a match.",
+    "errorMessage": "Sorry, there was an error submitting your application. Please try again."
+  }
+}

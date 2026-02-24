@@ -1,0 +1,138 @@
+{
+  "pageTitle": "Our Services",
+  "pageDescription": "Comprehensive manpower solutions and general contracting services tailored to meet your business needs.",
+  "categories": [
+    {
+      "id": "manpower",
+      "name": "Manpower Services",
+      "description": "Professional workforce solutions for businesses of all sizes"
+    },
+    {
+      "id": "contracting",
+      "name": "Contracting Services",
+      "description": "Complete construction and project management services"
+    }
+  ],
+  "services": [
+    {
+      "id": "manpower-supply",
+      "icon": "users-group",
+      "title": "Manpower Supply",
+      "description": "We provide skilled and unskilled workforce solutions across various industries including construction, hospitality, retail, and manufacturing.",
+      "category": "manpower",
+      "features": [
+        "Skilled and unskilled labor",
+        "Temporary and permanent staffing",
+        "Industry-specific workforce",
+        "Flexible staffing solutions"
+      ],
+      "benefits": [
+        "Reduced recruitment costs",
+        "Quick deployment",
+        "Pre-screened candidates",
+        "Compliance management"
+      ]
+    },
+    {
+      "id": "recruitment",
+      "icon": "user-plus",
+      "title": "Recruitment Services",
+      "description": "Professional recruitment and headhunting services to find the right talent for your organization.",
+      "category": "manpower",
+      "features": [
+        "Executive search",
+        "Mass recruitment",
+        "Technical recruitment",
+        "Background verification"
+      ],
+      "benefits": [
+        "Access to talent pool",
+        "Reduced time-to-hire",
+        "Quality candidates",
+        "End-to-end recruitment"
+      ]
+    },
+    {
+      "id": "workforce-management",
+      "icon": "chart-bar",
+      "title": "Workforce Management",
+      "description": "Comprehensive workforce management solutions including payroll, attendance, and performance tracking.",
+      "category": "manpower",
+      "features": [
+        "Payroll processing",
+        "Attendance management",
+        "Performance tracking",
+        "HR compliance"
+      ],
+      "benefits": [
+        "Streamlined operations",
+        "Cost efficiency",
+        "Compliance assurance",
+        "Real-time reporting"
+      ]
+    },
+    {
+      "id": "general-contracting",
+      "icon": "building",
+      "title": "General Contracting",
+      "description": "Complete construction services for commercial, residential, and industrial projects.",
+      "category": "contracting",
+      "features": [
+        "Commercial construction",
+        "Residential projects",
+        "Industrial facilities",
+        "Renovation and remodeling"
+      ],
+      "benefits": [
+        "Turnkey solutions",
+        "Quality workmanship",
+        "On-time delivery",
+        "Cost-effective pricing"
+      ]
+    },
+    {
+      "id": "project-management",
+      "icon": "clipboard-check",
+      "title": "Project Management",
+      "description": "Professional project management services ensuring successful delivery of construction projects.",
+      "category": "contracting",
+      "features": [
+        "Project planning",
+        "Resource allocation",
+        "Quality control",
+        "Risk management"
+      ],
+      "benefits": [
+        "Reduced project risks",
+        "Better coordination",
+        "Cost control",
+        "Timely completion"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "icon": "wrench",
+      "title": "Maintenance Services",
+      "description": "Ongoing maintenance and facility management services for commercial and residential properties.",
+      "category": "contracting",
+      "features": [
+        "Preventive maintenance",
+        "Emergency repairs",
+        "Facility management",
+        "MEP services"
+      ],
+      "benefits": [
+        "Extended asset life",
+        "Reduced downtime",
+        "Cost savings",
+        "24/7 support"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Need Our Services?",
+    "description": "Contact us today to discuss how we can help your business grow.",
+    "buttonText": "Get a Quote",
+    "buttonLink": "/en/contact"
+  }
+}

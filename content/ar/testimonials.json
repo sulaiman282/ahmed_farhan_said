@@ -1,0 +1,66 @@
+{
+  "pageTitle": "آراء العملاء",
+  "pageDescription": "اقرأ ما يقوله عملاؤنا عن حلول القوى العاملة وخدمات المقاولات لدينا.",
+  "items": [
+    {
+      "id": "testimonial-1",
+      "clientName": "محمد القحطاني",
+      "company": "شركة تطوير الرياض",
+      "rating": 5,
+      "feedback": "قدمت مؤسسة أحمد فرحان سعيد المرشود خدمة استثنائية في مشروع المجمع التجاري لدينا. احترافيتهم واهتمامهم بالتفاصيل والتزامهم بالمواعيد النهائية فاق توقعاتنا. نوصي بهم بشدة!",
+      "photo": "/images/testimonials/client-1.jpg",
+      "logo": "/images/testimonials/company-1.png",
+      "date": "2023-07-15"
+    },
+    {
+      "id": "testimonial-2",
+      "clientName": "فاطمة الحربي",
+      "company": "هيئة الإسكان بجدة",
+      "rating": 5,
+      "feedback": "كان العمل مع هذه الشركة ممتعاً. قدموا قوى عاملة ماهرة وأداروا مشروع الأبراج السكنية لدينا بشكل لا تشوبه شائبة. جودة العمل والإنجاز في الوقت المحدد أثار إعجابنا كثيراً.",
+      "photo": "/images/testimonials/client-2.jpg",
+      "logo": "/images/testimonials/company-2.png",
+      "date": "2023-04-20"
+    },
+    {
+      "id": "testimonial-3",
+      "clientName": "عبدالله الدوسري",
+      "company": "شركة التصنيع السعودية",
+      "rating": 5,
+      "feedback": "خبرتهم في بناء المنشآت الصناعية متميزة. من التخطيط إلى التنفيذ، تم التعامل مع كل مرحلة بشكل احترافي. تم إنجاز المشروع في الوقت المحدد وضمن الميزانية.",
+      "photo": "/images/testimonials/client-3.jpg",
+      "logo": "/images/testimonials/company-3.png",
+      "date": "2023-01-10"
+    },
+    {
+      "id": "testimonial-4",
+      "clientName": "سارة المطيري",
+      "company": "مجموعة مكة للضيافة",
+      "rating": 5,
+      "feedback": "كان مشروع تجديد الفندق معقداً، لكنهم أداروه ببراعة. كانت قوتهم العاملة ماهرة ومحترفة ومراعية لاحتياجاتنا التشغيلية أثناء التجديد.",
+      "photo": "/images/testimonials/client-4.jpg",
+      "logo": "/images/testimonials/company-4.png",
+      "date": "2023-10-05"
+    },
+    {
+      "id": "testimonial-5",
+      "clientName": "خالد الشمري",
+      "company": "تطوير المنطقة الشرقية",
+      "rating": 5,
+      "feedback": "حلول قوى عاملة ممتازة وإدارة مشاريع. تم تسليم مشروع مجتمع الفلل لدينا بجودة فائقة. تفاني فريقهم وخبرتهم جديرة بالثناء.",
+      "photo": "/images/testimonials/client-5.jpg",
+      "logo": "/images/testimonials/company-5.png",
+      "date": "2023-02-28"
+    },
+    {
+      "id": "testimonial-6",
+      "clientName": "نورة الزهراني",
+      "company": "هيئة مترو الرياض",
+      "rating": 5,
+      "feedback": "شريك موثوق لمشاريع البنية التحتية. فهمهم للمتطلبات المعقدة وقدرتهم على تقديم عمل عالي الجودة في الموعد المحدد يجعلهم متميزين في الصناعة.",
+      "photo": "/images/testimonials/client-6.jpg",
+      "logo": "/images/testimonials/company-6.png",
+      "date": "2022-09-12"
+    }
+  ]
+}

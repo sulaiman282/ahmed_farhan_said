@@ -1,0 +1,66 @@
+{
+  "pageTitle": "Client Testimonials",
+  "pageDescription": "Read what our clients say about our manpower solutions and contracting services.",
+  "items": [
+    {
+      "id": "testimonial-1",
+      "clientName": "Mohammed Al-Qahtani",
+      "company": "Riyadh Development Company",
+      "rating": 5,
+      "feedback": "AHMED FARHAN SAID AL-MARSHOUD EST. delivered exceptional service on our commercial complex project. Their professionalism, attention to detail, and commitment to deadlines exceeded our expectations. Highly recommended!",
+      "photo": "/images/testimonials/client-1.jpg",
+      "logo": "/images/testimonials/company-1.png",
+      "date": "2023-07-15"
+    },
+    {
+      "id": "testimonial-2",
+      "clientName": "Fatima Al-Harbi",
+      "company": "Jeddah Housing Authority",
+      "rating": 5,
+      "feedback": "Working with this company was a pleasure. They provided skilled manpower and managed our residential towers project flawlessly. The quality of work and timely completion impressed us greatly.",
+      "photo": "/images/testimonials/client-2.jpg",
+      "logo": "/images/testimonials/company-2.png",
+      "date": "2023-04-20"
+    },
+    {
+      "id": "testimonial-3",
+      "clientName": "Abdullah Al-Dosari",
+      "company": "Saudi Manufacturing Co.",
+      "rating": 5,
+      "feedback": "Their industrial facility construction expertise is outstanding. From planning to execution, every phase was handled professionally. The project was completed on time and within budget.",
+      "photo": "/images/testimonials/client-3.jpg",
+      "logo": "/images/testimonials/company-3.png",
+      "date": "2023-01-10"
+    },
+    {
+      "id": "testimonial-4",
+      "clientName": "Sarah Al-Mutairi",
+      "company": "Makkah Hospitality Group",
+      "rating": 5,
+      "feedback": "The hotel renovation project was complex, but they managed it brilliantly. Their workforce was skilled, professional, and respectful of our operational needs during the renovation.",
+      "photo": "/images/testimonials/client-4.jpg",
+      "logo": "/images/testimonials/company-4.png",
+      "date": "2023-10-05"
+    },
+    {
+      "id": "testimonial-5",
+      "clientName": "Khalid Al-Shammari",
+      "company": "Eastern Province Development",
+      "rating": 5,
+      "feedback": "Excellent manpower solutions and project management. Our villa community project was delivered with superior quality. Their team's dedication and expertise are commendable.",
+      "photo": "/images/testimonials/client-5.jpg",
+      "logo": "/images/testimonials/company-5.png",
+      "date": "2023-02-28"
+    },
+    {
+      "id": "testimonial-6",
+      "clientName": "Nora Al-Zahrani",
+      "company": "Riyadh Metro Authority",
+      "rating": 5,
+      "feedback": "A reliable partner for infrastructure projects. Their understanding of complex requirements and ability to deliver quality work on schedule makes them stand out in the industry.",
+      "photo": "/images/testimonials/client-6.jpg",
+      "logo": "/images/testimonials/company-6.png",
+      "date": "2022-09-12"
+    }
+  ]
+}

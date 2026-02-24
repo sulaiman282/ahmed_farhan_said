@@ -1,0 +1,78 @@
+{
+  "pageTitle": "About Us",
+  "hero": {
+    "title": "Building Excellence Since 2009",
+    "description": "AHMED FARHAN SAID AL-MARSHOUD FOR GENERAL CONTRACTING EST. is a leading provider of manpower solutions and general contracting services in Saudi Arabia."
+  },
+  "history": {
+    "title": "Our History",
+    "foundingYear": 2009,
+    "description": "Founded in 2009, our company has grown from a small manpower provider to a comprehensive contracting and workforce solutions company serving clients across Saudi Arabia. Our journey has been marked by consistent growth, client satisfaction, and a commitment to excellence."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "statement": "To deliver exceptional manpower and contracting services that exceed client expectations while maintaining the highest standards of quality, safety, and professionalism."
+  },
+  "values": {
+    "title": "Our Core Values",
+    "items": [
+      {
+        "icon": "integrity",
+        "title": "Integrity",
+        "description": "We conduct business with honesty, transparency, and ethical practices in all our dealings."
+      },
+      {
+        "icon": "excellence",
+        "title": "Excellence",
+        "description": "We strive for excellence in every project, continuously improving our services and processes."
+      },
+      {
+        "icon": "commitment",
+        "title": "Commitment",
+        "description": "We are committed to our clients' success and deliver on our promises consistently."
+      },
+      {
+        "icon": "innovation",
+        "title": "Innovation",
+        "description": "We embrace innovation and modern practices to provide cutting-edge solutions."
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications & Licenses",
+    "items": [
+      {
+        "name": "Saudi Arabian General Investment Authority License",
+        "issuer": "SAGIA",
+        "image": "/images/certifications/sagia.png"
+      },
+      {
+        "name": "Chamber of Commerce Membership",
+        "issuer": "Saudi Chamber of Commerce",
+        "image": "/images/certifications/chamber.png"
+      },
+      {
+        "name": "ISO 9001:2015 Quality Management",
+        "issuer": "International Organization for Standardization",
+        "image": "/images/certifications/iso9001.png"
+      }
+    ]
+  },
+  "team": {
+    "title": "Our Leadership",
+    "members": [
+      {
+        "name": "Ahmed Farhan Said Al-Marshoud",
+        "position": "Founder & CEO",
+        "bio": "With over 20 years of experience in the contracting industry, Ahmed leads our company with vision and dedication to excellence.",
+        "photo": "/images/team/ceo.jpg"
+      }
+    ]
+  },
+  "statistics": {
+    "projectsCompleted": 250,
+    "clientsServed": 150,
+    "workforceSize": 500,
+    "yearsOfExperience": 15
+  }
+}
