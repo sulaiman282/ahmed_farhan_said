@@ -17,14 +17,14 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'آراء العملاء - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      ? 'آراء العملاء - المرشود للمقاولات'
       : 'Client Testimonials - Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
       : 'Read what our clients say about our manpower solutions and contracting services',
     openGraph: {
       title: lang === 'ar' 
-        ? 'آراء العملاء - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        ? 'آراء العملاء - المرشود للمقاولات'
         : 'Client Testimonials - Al-Marshoud Contracting',
       description: lang === 'ar'
         ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'

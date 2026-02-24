@@ -18,14 +18,14 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'مشاريعنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      ? 'مشاريعنا - المرشود للمقاولات'
       : 'Our Projects - Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'استعرض مشاريعنا المكتملة في مجال القوى العاملة والمقاولات العامة في جميع أنحاء المملكة العربية السعودية'
       : 'Explore our completed projects in manpower solutions and general contracting across Saudi Arabia',
     openGraph: {
       title: lang === 'ar' 
-        ? 'مشاريعنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        ? 'مشاريعنا - المرشود للمقاولات'
         : 'Our Projects - Al-Marshoud Contracting',
       description: lang === 'ar'
         ? 'استعرض مشاريعنا المكتملة في مجال القوى العاملة والمقاولات العامة في جميع أنحاء المملكة العربية السعودية'

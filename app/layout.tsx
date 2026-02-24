@@ -12,22 +12,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <script
-        async=""
-        dangerouslySetInnerHTML={{
-          __html: `
-            try {
-              const theme = localStorage.getItem('theme') || 
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-              if (theme === 'dark') {
-                document.documentElement.classList.add('dark');
-              }
-            } catch (e) {}
-          `,
-        }}
-      />
-      {children}
-    </>
+    <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body>{children}</body>
+    </html>
   );
 }

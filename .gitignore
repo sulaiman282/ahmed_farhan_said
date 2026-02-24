@@ -2,3 +2,7 @@ node_modules
 .next
 .kiro
 .vscode
+
+# Environment variables
+.env.local
+.env*.local
