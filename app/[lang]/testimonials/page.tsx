@@ -11,16 +11,24 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Language };
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const content = await loadContent<TestimonialsContent>(params.lang, 'testimonials');
+  const { lang } = await params;
 
   return {
-    title: content.pageTitle,
-    description: content.pageDescription,
+    title: lang === 'ar' 
+      ? 'آراء العملاء - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Client Testimonials - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
+      : 'Read what our clients say about our manpower solutions and contracting services',
     openGraph: {
-      title: content.pageTitle,
-      description: content.pageDescription,
+      title: lang === 'ar' 
+        ? 'آراء العملاء - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Client Testimonials - Al-Marshoud Contracting',
+      description: lang === 'ar'
+        ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
+        : 'Read what our clients say about our manpower solutions and contracting services',
       type: 'website',
     },
   };
@@ -29,10 +37,11 @@ export async function generateMetadata({
 export default async function TestimonialsPage({
   params,
 }: {
-  params: { lang: Language };
+  params: Promise<{ lang: string }>;
 }) {
-  const content = await loadContent<TestimonialsContent>(params.lang, 'testimonials');
-  const isRTL = params.lang === 'ar';
+  const { lang } = await params;
+  const content = await loadContent<TestimonialsContent>(lang as Language, 'testimonials');
+  const isRTL = lang === 'ar';
 
   return (
     <div className="min-h-screen">
@@ -132,7 +141,7 @@ export default async function TestimonialsPage({
                 : 'Join our satisfied clients and experience excellence in manpower and contracting services.'}
             </p>
             <a
-              href={`/${params.lang}/contact`}
+              href={`/${lang}/contact`}
               className="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               {isRTL ? 'اتصل بنا' : 'Contact Us'}

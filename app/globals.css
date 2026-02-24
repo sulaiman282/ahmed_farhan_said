@@ -11,6 +11,14 @@
   --accent: #f59e0b;
 }
 
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --primary: #3b82f6;
+  --secondary: #64748b;
+  --accent: #fbbf24;
+}
+
 /* Base Styles */
 * {
   margin: 0;
@@ -29,6 +37,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Font Family Utilities */

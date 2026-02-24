@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Language, HomeContent } from '@/types/content';
 import { loadContent } from '@/lib/content/loader';
 import HeroSection from '@/components/home/HeroSection';
@@ -10,6 +11,27 @@ import PartnersSection from '@/components/home/PartnersSection';
 import FAQSection from '@/components/home/FAQSection';
 import NewsletterSection from '@/components/home/NewsletterSection';
 import CTASection from '@/components/home/CTASection';
+
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ar' }];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  
+  return {
+    title: lang === 'ar' 
+      ? 'أحمد فرحان سعيد المرشود للمقاولات العامة - حلول القوى العاملة والمقاولات'
+      : 'Al-Marshoud Contracting - Manpower Solutions & General Contracting Services',
+    description: lang === 'ar'
+      ? 'شريكك الموثوق في حلول القوى العاملة وخدمات المقاولات العامة في المملكة العربية السعودية'
+      : 'Your trusted partner in manpower solutions and general contracting services in Saudi Arabia',
+  };
+}
 
 export default async function HomePage({
   params,

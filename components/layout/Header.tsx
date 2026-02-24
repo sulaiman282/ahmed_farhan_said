@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Language, NavigationItem } from '@/types/content';
 import { getDirection } from '@/lib/i18n/config';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from '../shared/ThemeToggle';
 
 interface HeaderProps {
   lang: Language;
@@ -65,7 +66,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50">
+    <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50 dark:border-gray-700/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo and Company Name */}
@@ -91,10 +92,10 @@ export default function Header({ lang, navigation }: HeaderProps) {
               </svg>
             </div>
             <div className="hidden sm:block">
-              <div className="text-sm md:text-base font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors">
+              <div className="text-sm md:text-base font-bold text-gray-900 dark:text-white leading-tight group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                 {lang === 'ar' ? 'مؤسسة أحمد فرحان سعيد المرشود' : 'AHMED FARHAN SAID AL-MARSHOUD'}
               </div>
-              <div className="text-xs text-gray-600">
+              <div className="text-xs text-gray-600 dark:text-gray-400">
                 {lang === 'ar' ? 'للمقاولات العامة' : 'General Contracting Est.'}
               </div>
             </div>
@@ -109,7 +110,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   isActivePage(item.href)
                     ? 'bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-md'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white'
                 }`}
               >
                 {item.label}
@@ -117,14 +118,15 @@ export default function Header({ lang, navigation }: HeaderProps) {
             ))}
           </nav>
 
-          {/* Language Switcher and Mobile Menu Button */}
+          {/* Language Switcher, Theme Toggle and Mobile Menu Button */}
           <div className="flex items-center gap-3">
+            <ThemeToggle />
             <LanguageSwitcher currentLang={lang} />
             
             {/* Mobile Menu Button */}
             <button
               onClick={toggleDrawer}
-              className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              className="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               aria-label={lang === 'ar' ? 'فتح القائمة' : 'Open menu'}
               aria-expanded={isDrawerOpen}
             >
@@ -170,7 +172,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
           <div
             className={`fixed top-0 ${
               isRTL ? 'left-0' : 'right-0'
-            } h-full w-[80%] max-w-[320px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
+            } h-full w-[80%] max-w-[320px] bg-white dark:bg-gray-900 shadow-2xl transform transition-transform duration-300 ease-in-out ${
               isDrawerOpen
                 ? 'translate-x-0'
                 : isRTL
@@ -179,7 +181,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
             }`}
           >
             {/* Drawer Header */}
-            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center shadow-md">
                   <svg
@@ -196,7 +198,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
                     />
                   </svg>
                 </div>
-                <span className="text-sm font-bold text-gray-900">
+                <span className="text-sm font-bold text-gray-900 dark:text-white">
                   {lang === 'ar' ? 'القائمة' : 'Menu'}
                 </span>
               </div>
@@ -204,7 +206,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
               {/* Close Button */}
               <button
                 onClick={closeDrawer}
-                className="p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
                 aria-label={lang === 'ar' ? 'إغلاق القائمة' : 'Close menu'}
               >
                 <svg
@@ -238,7 +240,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
                         className={`flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
                           isActive
                             ? 'bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-md'
-                            : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white'
                         }`}
                       >
                         {/* Navigation Icon */}
@@ -293,8 +295,8 @@ export default function Header({ lang, navigation }: HeaderProps) {
               </div>
 
               {/* Language Switcher in Drawer */}
-              <div className="p-4 border-t border-gray-200 bg-gray-50">
-                <div className="text-xs font-medium text-gray-500 mb-2 px-2">
+              <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+                <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2 px-2">
                   {lang === 'ar' ? 'اللغة' : 'Language'}
                 </div>
                 <LanguageSwitcher currentLang={lang} />

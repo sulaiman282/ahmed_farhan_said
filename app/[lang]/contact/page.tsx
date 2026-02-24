@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Language } from '@/types/content';
 import { loadContent } from '@/lib/content/loader';
 import ContactForm from '@/components/contact/ContactForm';
@@ -33,6 +34,27 @@ interface ContactContent {
     submitButton: string;
     successMessage: string;
     errorMessage: string;
+  };
+}
+
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ar' }];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  return {
+    title: lang === 'ar' 
+      ? 'اتصل بنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Contact Us - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك'
+      : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help',
   };
 }
 

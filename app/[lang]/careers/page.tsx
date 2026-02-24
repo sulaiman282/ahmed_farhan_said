@@ -15,14 +15,21 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const content = await loadContent<CareersContent>(lang as Language, 'careers');
 
   return {
-    title: content.pageTitle,
-    description: content.pageDescription,
+    title: lang === 'ar' 
+      ? 'الوظائف - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Careers - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Join our team and explore career opportunities at Al-Marshoud Contracting',
     openGraph: {
-      title: content.pageTitle,
-      description: content.pageDescription,
+      title: lang === 'ar' 
+        ? 'الوظائف - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Careers - Al-Marshoud Contracting',
+      description: lang === 'ar'
+        ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Join our team and explore career opportunities at Al-Marshoud Contracting',
       type: 'website',
     },
   };

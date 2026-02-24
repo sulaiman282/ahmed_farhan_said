@@ -6,6 +6,7 @@ import { loadContent } from '@/lib/content/loader';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import BackToTop from '@/components/shared/BackToTop';
+import { ThemeProvider } from '@/components/shared/ThemeProvider';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -51,15 +52,17 @@ export default async function LanguageLayout({
   return (
     <html lang={lang} dir={dir}>
       <body className={`${fontClass} ${poppins.variable} ${tajawal.variable} antialiased font-sans`}>
-        <Header lang={lang as Language} navigation={navigationContent.mainMenu} />
-        {children}
-        <Footer 
-          lang={lang as Language} 
-          contactInfo={contactContent.contactInfo}
-          socialLinks={contactContent.socialLinks}
-          navigationLinks={navigationContent.footerMenu}
-        />
-        <BackToTop showAfterScroll={500} />
+        <ThemeProvider>
+          <Header lang={lang as Language} navigation={navigationContent.mainMenu} />
+          {children}
+          <Footer 
+            lang={lang as Language} 
+            contactInfo={contactContent.contactInfo}
+            socialLinks={contactContent.socialLinks}
+            navigationLinks={navigationContent.footerMenu}
+          />
+          <BackToTop showAfterScroll={500} />
+        </ThemeProvider>
       </body>
     </html>
   );

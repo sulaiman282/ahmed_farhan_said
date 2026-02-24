@@ -9,14 +9,21 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const servicesContent = await loadContent<ServicesContent>(lang as Language, 'services');
 
   return {
-    title: servicesContent.pageTitle,
-    description: servicesContent.pageDescription,
+    title: lang === 'ar' 
+      ? 'خدماتنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Our Services - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
+      : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',
     openGraph: {
-      title: servicesContent.pageTitle,
-      description: servicesContent.pageDescription,
+      title: lang === 'ar' 
+        ? 'خدماتنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Our Services - Al-Marshoud Contracting',
+      description: lang === 'ar'
+        ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
+        : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',
       type: 'website',
     },
   };

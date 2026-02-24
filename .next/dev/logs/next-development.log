@@ -30228,3 +30228,121 @@ https://react.dev/link/hydration-mismatch
 [00:59:35.943] Server  WARN    Error: Route "/[lang]/testimonials" used `params.lang`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
 [00:59:35.955] Server  ERROR   Error loading testimonials content for undefined: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
 [00:59:35.956] Server  WARN    Returning default content for testimonials
+[01:02:13.703] Server  LOG     ✓ Compiled in 65ms
+[01:02:31.362] Server  LOG     ✓ Compiled in 89ms
+[01:02:34.699] Server  LOG     ✓ Compiled in 71ms
+[01:02:37.918] Server  LOG     ✓ Compiled in 191ms
+[01:02:40.246] Server  LOG     ✓ Compiled in 61ms
+[01:03:05.743] Server  LOG     ✓ Compiled in 142ms
+[01:03:19.856] Server  LOG     ✓ Compiled in 5.6s
+[01:03:22.263] Server  LOG     ✓ Compiled in 851ms
+[01:03:23.881] Server  LOG     ✓ Compiled in 717ms
+[01:03:25.029] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:03:25.113] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:03:26.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:26.750] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:03:41.056] Server  LOG     ✓ Compiled in 115ms
+[01:03:41.706] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:03:43.304] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:44.865] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:03:45.335] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:03:46.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:46.749] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:04:26.136] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:04:26.845] Server  LOG     ✓ Compiled in 657ms
+[01:04:26.845] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/app_globals_71f961d1.css
+[01:04:26.851] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:04:26.950] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:04:28.039] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:28.758] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:04:47.655] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:04:48.966] Server  LOG     ✓ Compiled in 558ms
+[01:04:48.988] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/app_globals_71f961d1.css
+[01:04:48.989] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:04:49.455] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:04:52.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:53.779] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:05:04.666] Server  LOG     ✓ Compiled in 1890ms
+[01:05:04.769] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:05:05.259] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:05.759] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:05:05.759] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:05:05.759] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:05:05.759] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:05:34.195] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:05:34.220] Server  LOG     ✓ Compiled in 500ms
+[01:05:34.443] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:05:35.341] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:36.753] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:05:36.753] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:05:36.753] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:11:32.455] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:11:34.139] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:34.139] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:11:34.334] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:11:34.334] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:11:34.334] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:13:41.228] Server  LOG     ✓ Compiled in 114ms
+[01:13:41.986] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:13:42.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:13:42.690] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:13:42.871] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:14:04.651] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:14:05.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:05.215] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:05.215] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:05.215] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:14:20.417] Server  LOG     ✓ Compiled in 71ms
+[01:14:20.515] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:14:21.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:21.247] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:21.412] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:21.412] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:21.412] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:14:35.132] Server  LOG     ✓ Compiled in 61ms
+[01:14:35.184] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:14:36.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:36.543] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:14:49.112] Server  LOG     ✓ Compiled in 68ms
+[01:14:49.151] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:14:49.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:14:49.937] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:15:08.342] Server  LOG     ✓ Compiled in 68ms
+[01:15:08.652] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:15:09.178] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:09.178] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:09.333] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:09.334] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:09.334] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:15:21.441] Server  LOG     ✓ Compiled in 73ms
+[01:15:21.533] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:15:22.022] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:22.022] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:22.240] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:22.240] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:15:22.241] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider
+[01:36:36.004] Server  ERROR   ⨯ Error: useTheme must be used within a ThemeProvider
+[01:36:36.504] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:36.504] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:36:36.643] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:36:36.643] Browser ERROR   Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag.
+[01:36:36.643] Browser ERROR   uncaughtError: Error: useTheme must be used within a ThemeProvider

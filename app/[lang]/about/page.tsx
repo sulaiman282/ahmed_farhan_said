@@ -14,23 +14,28 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Language };
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const content = await loadContent<AboutContent>(params.lang, 'about');
+  const { lang } = await params;
 
   return {
-    title: content.pageTitle,
-    description: content.hero.description,
+    title: lang === 'ar' 
+      ? 'من نحن - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'About Us - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'تعرف على شركة أحمد فرحان سعيد المرشود للمقاولات العامة، الرائدة في حلول القوى العاملة وخدمات المقاولات في المملكة العربية السعودية منذ 2009'
+      : 'Learn about Al-Marshoud Contracting, a leading provider of manpower solutions and general contracting services in Saudi Arabia since 2009',
   };
 }
 
 export default async function AboutPage({
   params,
 }: {
-  params: { lang: Language };
+  params: Promise<{ lang: string }>;
 }) {
-  const content = await loadContent<AboutContent>(params.lang, 'about');
-  const dir = getDirection(params.lang);
+  const { lang } = await params;
+  const content = await loadContent<AboutContent>(lang as Language, 'about');
+  const dir = getDirection(lang as Language);
 
   return (
     <div className="min-h-screen">
@@ -138,7 +143,7 @@ export default async function AboutPage({
                 {content.statistics.projectsCompleted}+
               </div>
               <div className="text-blue-100 text-sm md:text-base">
-                {params.lang === 'en' ? 'Projects Completed' : 'مشروع مكتمل'}
+                {lang === 'en' ? 'Projects Completed' : 'مشروع مكتمل'}
               </div>
             </div>
             <div className="text-center">
@@ -146,7 +151,7 @@ export default async function AboutPage({
                 {content.statistics.clientsServed}+
               </div>
               <div className="text-blue-100 text-sm md:text-base">
-                {params.lang === 'en' ? 'Clients Served' : 'عميل راضٍ'}
+                {lang === 'en' ? 'Clients Served' : 'عميل راضٍ'}
               </div>
             </div>
             <div className="text-center">
@@ -154,7 +159,7 @@ export default async function AboutPage({
                 {content.statistics.workforceSize}+
               </div>
               <div className="text-blue-100 text-sm md:text-base">
-                {params.lang === 'en' ? 'Workforce' : 'قوة عاملة'}
+                {lang === 'en' ? 'Workforce' : 'قوة عاملة'}
               </div>
             </div>
             <div className="text-center">
@@ -162,7 +167,7 @@ export default async function AboutPage({
                 {content.statistics.yearsOfExperience}+
               </div>
               <div className="text-blue-100 text-sm md:text-base">
-                {params.lang === 'en' ? 'Years Experience' : 'سنة خبرة'}
+                {lang === 'en' ? 'Years Experience' : 'سنة خبرة'}
               </div>
             </div>
           </div>
@@ -254,17 +259,17 @@ export default async function AboutPage({
       <CTASection
         cta={{
           title:
-            params.lang === 'en'
+            lang === 'en'
               ? 'Ready to Work With Us?'
               : 'هل أنت مستعد للعمل معنا؟',
           description:
-            params.lang === 'en'
+            lang === 'en'
               ? 'Contact us today to discuss your project requirements and discover how we can help you achieve your goals.'
               : 'اتصل بنا اليوم لمناقشة متطلبات مشروعك واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك.',
-          buttonText: params.lang === 'en' ? 'Contact Us' : 'اتصل بنا',
-          buttonLink: `/${params.lang}/contact`,
+          buttonText: lang === 'en' ? 'Contact Us' : 'اتصل بنا',
+          buttonLink: `/${lang}/contact`,
         }}
-        lang={params.lang}
+        lang={lang as Language}
       />
     </div>
   );

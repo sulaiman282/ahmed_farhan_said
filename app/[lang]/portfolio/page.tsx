@@ -15,14 +15,21 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const content = await loadContent<PortfolioContent>(lang as Language, 'portfolio');
 
   return {
-    title: content.pageTitle,
-    description: content.pageDescription,
+    title: lang === 'ar' 
+      ? 'مشاريعنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Our Projects - Al-Marshoud Contracting',
+    description: lang === 'ar'
+      ? 'استعرض مشاريعنا المكتملة في مجال القوى العاملة والمقاولات العامة في جميع أنحاء المملكة العربية السعودية'
+      : 'Explore our completed projects in manpower solutions and general contracting across Saudi Arabia',
     openGraph: {
-      title: content.pageTitle,
-      description: content.pageDescription,
+      title: lang === 'ar' 
+        ? 'مشاريعنا - أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Our Projects - Al-Marshoud Contracting',
+      description: lang === 'ar'
+        ? 'استعرض مشاريعنا المكتملة في مجال القوى العاملة والمقاولات العامة في جميع أنحاء المملكة العربية السعودية'
+        : 'Explore our completed projects in manpower solutions and general contracting across Saudi Arabia',
       type: 'website',
     },
   };

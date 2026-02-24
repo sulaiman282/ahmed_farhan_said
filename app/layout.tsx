@@ -11,5 +11,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <>
+      <script
+        async=""
+        dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              const theme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+              if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+              }
+            } catch (e) {}
+          `,
+        }}
+      />
+      {children}
+    </>
+  );
 }
