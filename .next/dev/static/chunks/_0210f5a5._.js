@@ -250,45 +250,100 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Header(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(48);
-    if ($[0] !== "71ea7225faa710db70b593d4155e14217890da088fd413ae6a855efe6abc4e61") {
-        for(let $i = 0; $i < 48; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(56);
+    if ($[0] !== "a509457ef7f47eb995f90a6f2ada27471465fe19a6ef758f441da89e5ad2c18e") {
+        for(let $i = 0; $i < 56; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "71ea7225faa710db70b593d4155e14217890da088fd413ae6a855efe6abc4e61";
+        $[0] = "a509457ef7f47eb995f90a6f2ada27471465fe19a6ef758f441da89e5ad2c18e";
     }
     const { lang, navigation } = t0;
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isDrawerOpen, setIsDrawerOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2f$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDirection"])(lang);
     let t1;
-    if ($[1] !== isMobileMenuOpen) {
-        t1 = ({
-            "Header[toggleMobileMenu]": ()=>{
-                setIsMobileMenuOpen(!isMobileMenuOpen);
-            }
-        })["Header[toggleMobileMenu]"];
-        $[1] = isMobileMenuOpen;
+    if ($[1] !== lang) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2f$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDirection"])(lang);
+        $[1] = lang;
         $[2] = t1;
     } else {
         t1 = $[2];
     }
-    const toggleMobileMenu = t1;
+    const dir = t1;
+    const isRTL = dir === "rtl";
     let t2;
-    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    if ($[3] !== isDrawerOpen) {
         t2 = ({
-            "Header[closeMobileMenu]": ()=>{
-                setIsMobileMenuOpen(false);
+            "Header[toggleDrawer]": ()=>{
+                setIsDrawerOpen(!isDrawerOpen);
             }
-        })["Header[closeMobileMenu]"];
-        $[3] = t2;
+        })["Header[toggleDrawer]"];
+        $[3] = isDrawerOpen;
+        $[4] = t2;
     } else {
-        t2 = $[3];
+        t2 = $[4];
     }
-    const closeMobileMenu = t2;
+    const toggleDrawer = t2;
     let t3;
-    if ($[4] !== lang || $[5] !== pathname) {
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = ({
+            "Header[closeDrawer]": ()=>{
+                setIsDrawerOpen(false);
+            }
+        })["Header[closeDrawer]"];
+        $[5] = t3;
+    } else {
+        t3 = $[5];
+    }
+    const closeDrawer = t3;
+    let t4;
+    let t5;
+    if ($[6] !== isDrawerOpen) {
+        t4 = ({
+            "Header[useEffect()]": ()=>{
+                if (isDrawerOpen) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "unset";
+                }
+                return _temp;
+            }
+        })["Header[useEffect()]"];
+        t5 = [
+            isDrawerOpen
+        ];
+        $[6] = isDrawerOpen;
+        $[7] = t4;
+        $[8] = t5;
+    } else {
+        t4 = $[7];
+        t5 = $[8];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t4, t5);
+    let t6;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = ({
+            "Header[useEffect()]": ()=>{
+                closeDrawer();
+            }
+        })["Header[useEffect()]"];
+        $[9] = t6;
+    } else {
+        t6 = $[9];
+    }
+    let t7;
+    if ($[10] !== pathname) {
+        t7 = [
+            pathname
+        ];
+        $[10] = pathname;
+        $[11] = t7;
+    } else {
+        t7 = $[11];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t6, t7);
+    let t8;
+    if ($[12] !== lang || $[13] !== pathname) {
+        t8 = ({
             "Header[isActivePage]": (href)=>{
                 if (href === `/${lang}` || href === `/${lang}/`) {
                     return pathname === `/${lang}` || pathname === `/${lang}/`;
@@ -296,17 +351,17 @@ function Header(t0) {
                 return pathname.startsWith(href);
             }
         })["Header[isActivePage]"];
-        $[4] = lang;
-        $[5] = pathname;
-        $[6] = t3;
+        $[12] = lang;
+        $[13] = pathname;
+        $[14] = t8;
     } else {
-        t3 = $[6];
+        t8 = $[14];
     }
-    const isActivePage = t3;
-    const t4 = `/${lang}`;
-    let t5;
-    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    const isActivePage = t8;
+    const t9 = `/${lang}`;
+    let t10;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                 className: "w-6 h-6 md:w-7 md:h-7 text-white",
@@ -321,175 +376,155 @@ function Header(t0) {
                     d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                 }, void 0, false, {
                     fileName: "[project]/components/layout/Header.tsx",
-                    lineNumber: 87,
-                    columnNumber: 368
+                    lineNumber: 138,
+                    columnNumber: 369
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/layout/Header.tsx",
-                lineNumber: 87,
-                columnNumber: 229
+                lineNumber: 138,
+                columnNumber: 230
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 87,
-            columnNumber: 10
-        }, this);
-        $[7] = t5;
-    } else {
-        t5 = $[7];
-    }
-    const t6 = lang === "ar" ? "\u0645\u0624\u0633\u0633\u0629 \u0623\u062D\u0645\u062F \u0641\u0631\u062D\u0627\u0646 \u0633\u0639\u064A\u062F \u0627\u0644\u0645\u0631\u0634\u0648\u062F" : "AHMED FARHAN SAID AL-MARSHOUD";
-    let t7;
-    if ($[8] !== t6) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "text-sm md:text-base font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors",
-            children: t6
-        }, void 0, false, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 95,
-            columnNumber: 10
-        }, this);
-        $[8] = t6;
-        $[9] = t7;
-    } else {
-        t7 = $[9];
-    }
-    const t8 = lang === "ar" ? "\u0644\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062A \u0627\u0644\u0639\u0627\u0645\u0629" : "General Contracting Est.";
-    let t9;
-    if ($[10] !== t8) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "text-xs text-gray-600",
-            children: t8
-        }, void 0, false, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 104,
-            columnNumber: 10
-        }, this);
-        $[10] = t8;
-        $[11] = t9;
-    } else {
-        t9 = $[11];
-    }
-    let t10;
-    if ($[12] !== t7 || $[13] !== t9) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "hidden sm:block",
-            children: [
-                t7,
-                t9
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 112,
-            columnNumber: 11
-        }, this);
-        $[12] = t7;
-        $[13] = t9;
-        $[14] = t10;
-    } else {
-        t10 = $[14];
-    }
-    let t11;
-    if ($[15] !== t10 || $[16] !== t4) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: t4,
-            className: "flex items-center gap-3 hover:opacity-80 transition-all duration-300 group",
-            onClick: closeMobileMenu,
-            children: [
-                t5,
-                t10
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 121,
+            lineNumber: 138,
             columnNumber: 11
         }, this);
         $[15] = t10;
-        $[16] = t4;
-        $[17] = t11;
     } else {
-        t11 = $[17];
+        t10 = $[15];
     }
+    const t11 = lang === "ar" ? "\u0645\u0624\u0633\u0633\u0629 \u0623\u062D\u0645\u062F \u0641\u0631\u062D\u0627\u0646 \u0633\u0639\u064A\u062F \u0627\u0644\u0645\u0631\u0634\u0648\u062F" : "AHMED FARHAN SAID AL-MARSHOUD";
     let t12;
-    if ($[18] !== isActivePage || $[19] !== navigation) {
-        let t13;
-        if ($[21] !== isActivePage) {
-            t13 = ({
+    if ($[16] !== t11) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "text-sm md:text-base font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors",
+            children: t11
+        }, void 0, false, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 146,
+            columnNumber: 11
+        }, this);
+        $[16] = t11;
+        $[17] = t12;
+    } else {
+        t12 = $[17];
+    }
+    const t13 = lang === "ar" ? "\u0644\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062A \u0627\u0644\u0639\u0627\u0645\u0629" : "General Contracting Est.";
+    let t14;
+    if ($[18] !== t13) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "text-xs text-gray-600",
+            children: t13
+        }, void 0, false, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 155,
+            columnNumber: 11
+        }, this);
+        $[18] = t13;
+        $[19] = t14;
+    } else {
+        t14 = $[19];
+    }
+    let t15;
+    if ($[20] !== t12 || $[21] !== t14) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "hidden sm:block",
+            children: [
+                t12,
+                t14
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 163,
+            columnNumber: 11
+        }, this);
+        $[20] = t12;
+        $[21] = t14;
+        $[22] = t15;
+    } else {
+        t15 = $[22];
+    }
+    let t16;
+    if ($[23] !== t15 || $[24] !== t9) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: t9,
+            className: "flex items-center gap-3 hover:opacity-80 transition-all duration-300 group",
+            onClick: closeDrawer,
+            children: [
+                t10,
+                t15
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 172,
+            columnNumber: 11
+        }, this);
+        $[23] = t15;
+        $[24] = t9;
+        $[25] = t16;
+    } else {
+        t16 = $[25];
+    }
+    let t17;
+    if ($[26] !== isActivePage || $[27] !== navigation) {
+        let t18;
+        if ($[29] !== isActivePage) {
+            t18 = ({
                 "Header[navigation.map()]": (item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: item.href,
                         className: `px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActivePage(item.href) ? "bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-md" : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"}`,
                         children: item.label
                     }, item.href, false, {
                         fileName: "[project]/components/layout/Header.tsx",
-                        lineNumber: 133,
+                        lineNumber: 184,
                         columnNumber: 45
                     }, this)
             })["Header[navigation.map()]"];
-            $[21] = isActivePage;
-            $[22] = t13;
+            $[29] = isActivePage;
+            $[30] = t18;
         } else {
-            t13 = $[22];
+            t18 = $[30];
         }
-        t12 = navigation.map(t13);
-        $[18] = isActivePage;
-        $[19] = navigation;
-        $[20] = t12;
+        t17 = navigation.map(t18);
+        $[26] = isActivePage;
+        $[27] = navigation;
+        $[28] = t17;
     } else {
-        t12 = $[20];
+        t17 = $[28];
     }
-    let t13;
-    if ($[23] !== t12) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+    let t18;
+    if ($[31] !== t17) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: "hidden lg:flex items-center gap-1",
-            children: t12
+            children: t17
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 149,
+            lineNumber: 200,
             columnNumber: 11
         }, this);
-        $[23] = t12;
-        $[24] = t13;
+        $[31] = t17;
+        $[32] = t18;
     } else {
-        t13 = $[24];
+        t18 = $[32];
     }
-    let t14;
-    if ($[25] !== lang) {
-        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2f$LanguageSwitcher$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    let t19;
+    if ($[33] !== lang) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2f$LanguageSwitcher$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             currentLang: lang
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 157,
+            lineNumber: 208,
             columnNumber: 11
         }, this);
-        $[25] = lang;
-        $[26] = t14;
+        $[33] = lang;
+        $[34] = t19;
     } else {
-        t14 = $[26];
+        t19 = $[34];
     }
-    const t15 = isMobileMenuOpen ? lang === "ar" ? "\u0625\u063A\u0644\u0627\u0642 \u0627\u0644\u0642\u0627\u0626\u0645\u0629" : "Close menu" : lang === "ar" ? "\u0641\u062A\u062D \u0627\u0644\u0642\u0627\u0626\u0645\u0629" : "Open menu";
-    let t16;
-    if ($[27] !== isMobileMenuOpen) {
-        t16 = isMobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            className: "w-6 h-6",
-            fill: "none",
-            stroke: "currentColor",
-            viewBox: "0 0 24 24",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                strokeWidth: 2,
-                d: "M6 18L18 6M6 6l12 12"
-            }, void 0, false, {
-                fileName: "[project]/components/layout/Header.tsx",
-                lineNumber: 166,
-                columnNumber: 144
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 166,
-            columnNumber: 30
-        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+    const t20 = lang === "ar" ? "\u0641\u062A\u062D \u0627\u0644\u0642\u0627\u0626\u0645\u0629" : "Open menu";
+    let t21;
+    if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             className: "w-6 h-6",
             fill: "none",
             stroke: "currentColor",
@@ -502,149 +537,364 @@ function Header(t0) {
                 d: "M4 6h16M4 12h16M4 18h16"
             }, void 0, false, {
                 fileName: "[project]/components/layout/Header.tsx",
-                lineNumber: 166,
-                columnNumber: 361
+                lineNumber: 217,
+                columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 166,
-            columnNumber: 247
-        }, this);
-        $[27] = isMobileMenuOpen;
-        $[28] = t16;
-    } else {
-        t16 = $[28];
-    }
-    let t17;
-    if ($[29] !== isMobileMenuOpen || $[30] !== t15 || $[31] !== t16 || $[32] !== toggleMobileMenu) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            onClick: toggleMobileMenu,
-            className: "lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors duration-200",
-            "aria-label": t15,
-            "aria-expanded": isMobileMenuOpen,
-            children: t16
-        }, void 0, false, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 174,
+            lineNumber: 217,
             columnNumber: 11
         }, this);
-        $[29] = isMobileMenuOpen;
-        $[30] = t15;
-        $[31] = t16;
-        $[32] = toggleMobileMenu;
-        $[33] = t17;
+        $[35] = t21;
     } else {
-        t17 = $[33];
+        t21 = $[35];
     }
-    let t18;
-    if ($[34] !== t14 || $[35] !== t17) {
-        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t22;
+    if ($[36] !== isDrawerOpen || $[37] !== t20 || $[38] !== toggleDrawer) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            onClick: toggleDrawer,
+            className: "lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors duration-200",
+            "aria-label": t20,
+            "aria-expanded": isDrawerOpen,
+            children: t21
+        }, void 0, false, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 224,
+            columnNumber: 11
+        }, this);
+        $[36] = isDrawerOpen;
+        $[37] = t20;
+        $[38] = toggleDrawer;
+        $[39] = t22;
+    } else {
+        t22 = $[39];
+    }
+    let t23;
+    if ($[40] !== t19 || $[41] !== t22) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center gap-3",
             children: [
-                t14,
-                t17
+                t19,
+                t22
             ]
         }, void 0, true, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 185,
+            lineNumber: 234,
             columnNumber: 11
         }, this);
-        $[34] = t14;
-        $[35] = t17;
-        $[36] = t18;
-    } else {
-        t18 = $[36];
-    }
-    let t19;
-    if ($[37] !== t11 || $[38] !== t13 || $[39] !== t18) {
-        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center justify-between h-16 md:h-20",
-            children: [
-                t11,
-                t13,
-                t18
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 194,
-            columnNumber: 11
-        }, this);
-        $[37] = t11;
-        $[38] = t13;
-        $[39] = t18;
         $[40] = t19;
+        $[41] = t22;
+        $[42] = t23;
     } else {
-        t19 = $[40];
+        t23 = $[42];
     }
-    let t20;
-    if ($[41] !== isActivePage || $[42] !== isMobileMenuOpen || $[43] !== navigation) {
-        t20 = isMobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-            className: "lg:hidden py-4 border-t border-gray-200",
+    let t24;
+    if ($[43] !== t16 || $[44] !== t18 || $[45] !== t23) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-4 sm:px-6 lg:px-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col gap-2",
-                children: navigation.map({
-                    "Header[navigation.map()]": (item_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: item_0.href,
-                            onClick: closeMobileMenu,
-                            className: `px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 ${isActivePage(item_0.href) ? "bg-primary text-white" : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"}`,
-                            children: item_0.label
-                        }, item_0.href, false, {
-                            fileName: "[project]/components/layout/Header.tsx",
-                            lineNumber: 205,
-                            columnNumber: 49
-                        }, this)
-                }["Header[navigation.map()]"])
-            }, void 0, false, {
-                fileName: "[project]/components/layout/Header.tsx",
-                lineNumber: 204,
-                columnNumber: 88
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 204,
-            columnNumber: 31
-        }, this);
-        $[41] = isActivePage;
-        $[42] = isMobileMenuOpen;
-        $[43] = navigation;
-        $[44] = t20;
-    } else {
-        t20 = $[44];
-    }
-    let t21;
-    if ($[45] !== t19 || $[46] !== t20) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-            className: "sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-4 sm:px-6 lg:px-8",
+                className: "flex items-center justify-between h-16 md:h-20",
                 children: [
-                    t19,
-                    t20
+                    t16,
+                    t18,
+                    t23
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/layout/Header.tsx",
-                lineNumber: 216,
-                columnNumber: 123
+                lineNumber: 243,
+                columnNumber: 67
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.tsx",
-            lineNumber: 216,
+            lineNumber: 243,
             columnNumber: 11
         }, this);
-        $[45] = t19;
-        $[46] = t20;
-        $[47] = t21;
+        $[43] = t16;
+        $[44] = t18;
+        $[45] = t23;
+        $[46] = t24;
     } else {
-        t21 = $[47];
+        t24 = $[46];
     }
-    return t21;
+    let t25;
+    if ($[47] !== isActivePage || $[48] !== isDrawerOpen || $[49] !== isRTL || $[50] !== lang || $[51] !== navigation) {
+        t25 = isDrawerOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "fixed inset-0 z-50 lg:hidden",
+            role: "dialog",
+            "aria-modal": "true",
+            "aria-label": lang === "ar" ? "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u062A\u0646\u0642\u0644" : "Navigation menu",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: `fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${isDrawerOpen ? "opacity-100" : "opacity-0"}`,
+                    onClick: closeDrawer,
+                    "aria-hidden": "true"
+                }, void 0, false, {
+                    fileName: "[project]/components/layout/Header.tsx",
+                    lineNumber: 253,
+                    columnNumber: 224
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: `fixed top-0 ${isRTL ? "left-0" : "right-0"} h-full w-[80%] max-w-[320px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? "translate-x-0" : isRTL ? "-translate-x-full" : "translate-x-full"}`,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between p-4 border-b border-gray-200",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-8 h-8 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center shadow-md",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                className: "w-5 h-5 text-white",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round",
+                                                    strokeWidth: 2,
+                                                    d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/layout/Header.tsx",
+                                                    lineNumber: 253,
+                                                    columnNumber: 1000
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/layout/Header.tsx",
+                                                lineNumber: 253,
+                                                columnNumber: 910
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/layout/Header.tsx",
+                                            lineNumber: 253,
+                                            columnNumber: 781
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm font-bold text-gray-900",
+                                            children: lang === "ar" ? "\u0627\u0644\u0642\u0627\u0626\u0645\u0629" : "Menu"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/layout/Header.tsx",
+                                            lineNumber: 253,
+                                            columnNumber: 1223
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/layout/Header.tsx",
+                                    lineNumber: 253,
+                                    columnNumber: 740
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: closeDrawer,
+                                    className: "p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors duration-200",
+                                    "aria-label": lang === "ar" ? "\u0625\u063A\u0644\u0627\u0642 \u0627\u0644\u0642\u0627\u0626\u0645\u0629" : "Close menu",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "w-6 h-6",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M6 18L18 6M6 6l12 12"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/layout/Header.tsx",
+                                            lineNumber: 253,
+                                            columnNumber: 1676
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/layout/Header.tsx",
+                                        lineNumber: 253,
+                                        columnNumber: 1597
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Header.tsx",
+                                    lineNumber: 253,
+                                    columnNumber: 1357
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/layout/Header.tsx",
+                            lineNumber: 253,
+                            columnNumber: 660
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                            className: "flex flex-col h-[calc(100%-73px)] overflow-y-auto",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1 p-4",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col gap-2",
+                                        children: navigation.map({
+                                            "Header[navigation.map()]": (item_0)=>{
+                                                const isActive = isActivePage(item_0.href);
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: item_0.href,
+                                                    onClick: closeDrawer,
+                                                    className: `flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${isActive ? "bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-md" : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"}`,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            className: "w-5 h-5",
+                                                            fill: "none",
+                                                            stroke: "currentColor",
+                                                            viewBox: "0 0 24 24",
+                                                            children: item_0.href.includes("about") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/layout/Header.tsx",
+                                                                lineNumber: 256,
+                                                                columnNumber: 454
+                                                            }, this) : item_0.href.includes("services") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/layout/Header.tsx",
+                                                                lineNumber: 256,
+                                                                columnNumber: 623
+                                                            }, this) : item_0.href.includes("projects") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/layout/Header.tsx",
+                                                                lineNumber: 256,
+                                                                columnNumber: 907
+                                                            }, this) : item_0.href.includes("contact") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/layout/Header.tsx",
+                                                                lineNumber: 256,
+                                                                columnNumber: 1155
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/layout/Header.tsx",
+                                                                lineNumber: 256,
+                                                                columnNumber: 1332
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/layout/Header.tsx",
+                                                            lineNumber: 256,
+                                                            columnNumber: 342
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: item_0.label
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/layout/Header.tsx",
+                                                            lineNumber: 256,
+                                                            columnNumber: 1557
+                                                        }, this)
+                                                    ]
+                                                }, item_0.href, true, {
+                                                    fileName: "[project]/components/layout/Header.tsx",
+                                                    lineNumber: 256,
+                                                    columnNumber: 26
+                                                }, this);
+                                            }
+                                        }["Header[navigation.map()]"])
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/layout/Header.tsx",
+                                        lineNumber: 253,
+                                        columnNumber: 1886
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Header.tsx",
+                                    lineNumber: 253,
+                                    columnNumber: 1858
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 border-t border-gray-200 bg-gray-50",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-xs font-medium text-gray-500 mb-2 px-2",
+                                            children: lang === "ar" ? "\u0627\u0644\u0644\u063A\u0629" : "Language"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/layout/Header.tsx",
+                                            lineNumber: 258,
+                                            columnNumber: 115
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2f$LanguageSwitcher$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            currentLang: lang
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/layout/Header.tsx",
+                                            lineNumber: 258,
+                                            columnNumber: 245
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/layout/Header.tsx",
+                                    lineNumber: 258,
+                                    columnNumber: 58
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/layout/Header.tsx",
+                            lineNumber: 253,
+                            columnNumber: 1791
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/layout/Header.tsx",
+                    lineNumber: 253,
+                    columnNumber: 407
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 253,
+            columnNumber: 27
+        }, this);
+        $[47] = isActivePage;
+        $[48] = isDrawerOpen;
+        $[49] = isRTL;
+        $[50] = lang;
+        $[51] = navigation;
+        $[52] = t25;
+    } else {
+        t25 = $[52];
+    }
+    let t26;
+    if ($[53] !== t24 || $[54] !== t25) {
+        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+            className: "sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50",
+            children: [
+                t24,
+                t25
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/layout/Header.tsx",
+            lineNumber: 270,
+            columnNumber: 11
+        }, this);
+        $[53] = t24;
+        $[54] = t25;
+        $[55] = t26;
+    } else {
+        t26 = $[55];
+    }
+    return t26;
 }
-_s(Header, "xiSerfmn3VbWFvbNZ9iBf+hxj1c=", false, function() {
+_s(Header, "YiG2POduCWy0SGJk9ycWzSw+0NQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
 });
 _c = Header;
+function _temp() {
+    document.body.style.overflow = "unset";
+}
 var _c;
 __turbopack_context__.k.register(_c, "Header");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
