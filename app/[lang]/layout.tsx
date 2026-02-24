@@ -1,20 +1,23 @@
 import React from 'react';
-import { Inter, Cairo } from 'next/font/google';
+import { Poppins, Tajawal } from 'next/font/google';
 import { getDirection } from '@/lib/i18n/config';
 import { Language } from '@/types/content';
 import { loadContent } from '@/lib/content/loader';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import BackToTop from '@/components/shared/BackToTop';
 
-const inter = Inter({
-  variable: '--font-inter',
+const poppins = Poppins({
+  variable: '--font-poppins',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
 });
 
-const cairo = Cairo({
-  variable: '--font-cairo',
+const tajawal = Tajawal({
+  variable: '--font-tajawal',
   subsets: ['arabic', 'latin'],
+  weight: ['300', '400', '500', '700'],
   display: 'swap',
 });
 
@@ -31,7 +34,7 @@ export default async function LanguageLayout({
 }) {
   const { lang } = await params;
   const dir = getDirection(lang as Language);
-  const fontClass = lang === 'ar' ? cairo.variable : inter.variable;
+  const fontClass = lang === 'ar' ? tajawal.variable : poppins.variable;
 
   // Load navigation content
   const navigationContent = await loadContent(
@@ -47,7 +50,7 @@ export default async function LanguageLayout({
 
   return (
     <html lang={lang} dir={dir}>
-      <body className={`${fontClass} ${inter.variable} ${cairo.variable} antialiased font-sans`}>
+      <body className={`${fontClass} ${poppins.variable} ${tajawal.variable} antialiased font-sans`}>
         <Header lang={lang as Language} navigation={navigationContent.mainMenu} />
         {children}
         <Footer 
@@ -56,6 +59,7 @@ export default async function LanguageLayout({
           socialLinks={contactContent.socialLinks}
           navigationLinks={navigationContent.footerMenu}
         />
+        <BackToTop showAfterScroll={500} />
       </body>
     </html>
   );

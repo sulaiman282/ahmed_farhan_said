@@ -91,8 +91,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        arabic: ['var(--font-cairo)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        arabic: ['var(--font-tajawal)', 'system-ui', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

@@ -92,6 +92,54 @@
     "title": "Our Projects",
     "viewAllLink": "/en/portfolio"
   },
+  "partners": {
+    "title": "Our Trusted Partners",
+    "items": [
+      { "name": "Saudi Aramco", "logo": "/images/partners/aramco.png" },
+      { "name": "SABIC", "logo": "/images/partners/sabic.png" },
+      { "name": "Saudi Electricity", "logo": "/images/partners/sec.png" },
+      { "name": "Riyadh Metro", "logo": "/images/partners/metro.png" },
+      { "name": "NEOM", "logo": "/images/partners/neom.png" },
+      { "name": "Red Sea Development", "logo": "/images/partners/redsea.png" }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What services does your company provide?",
+        "answer": "We provide comprehensive manpower supply, recruitment services, general contracting, project management, maintenance services, and consulting. Our services cover all aspects of workforce solutions and construction projects."
+      },
+      {
+        "question": "How long does the recruitment process take?",
+        "answer": "The recruitment timeline varies depending on the position and requirements. Typically, we can provide qualified candidates within 2-4 weeks for standard positions. For specialized roles, it may take 4-8 weeks to ensure we find the perfect match."
+      },
+      {
+        "question": "Are you licensed to operate in Saudi Arabia?",
+        "answer": "Yes, we are fully licensed and certified to operate in Saudi Arabia. We hold all necessary permits and comply with Saudi labor laws and regulations. Our company is registered with the Ministry of Human Resources and Social Development."
+      },
+      {
+        "question": "What industries do you serve?",
+        "answer": "We serve a wide range of industries including construction, oil & gas, manufacturing, hospitality, healthcare, retail, and more. Our diverse experience allows us to understand the unique needs of each sector."
+      },
+      {
+        "question": "Do you provide workers for short-term projects?",
+        "answer": "Yes, we offer flexible workforce solutions for both short-term and long-term projects. Whether you need workers for a few weeks or several years, we can accommodate your requirements."
+      },
+      {
+        "question": "How do you ensure the quality of your workers?",
+        "answer": "We have a rigorous screening and vetting process that includes background checks, skills assessments, and interviews. All our workers are trained and qualified for their respective roles. We also provide ongoing support and quality monitoring."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Subscribe to our newsletter for the latest news, projects, and industry insights.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe",
+    "successMessage": "Thank you for subscribing! You'll receive our latest updates.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
   "cta": {
     "title": "Ready to Start Your Project?",
     "description": "Contact us today to discuss your manpower and contracting needs. Our team is ready to help you succeed.",
