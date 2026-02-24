@@ -4,6 +4,7 @@ import { getDirection } from '@/lib/i18n/config';
 import { Language } from '@/types/content';
 import { loadContent } from '@/lib/content/loader';
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -38,11 +39,23 @@ export default async function LanguageLayout({
     'navigation'
   );
 
+  // Load contact content for footer
+  const contactContent = await loadContent(
+    lang as Language,
+    'contact'
+  );
+
   return (
     <html lang={lang} dir={dir}>
       <body className={`${fontClass} ${inter.variable} ${cairo.variable} antialiased font-sans`}>
         <Header lang={lang as Language} navigation={navigationContent.mainMenu} />
         {children}
+        <Footer 
+          lang={lang as Language} 
+          contactInfo={contactContent.contactInfo}
+          socialLinks={contactContent.socialLinks}
+          navigationLinks={navigationContent.footerMenu}
+        />
       </body>
     </html>
   );
