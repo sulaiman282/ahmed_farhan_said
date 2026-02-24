@@ -47,16 +47,16 @@ export default function Header({ lang, navigation }: HeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo and Company Name */}
           <Link 
             href={`/${lang}`}
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-80 transition-all duration-300 group"
             onClick={closeMobileMenu}
           >
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
               <svg
                 className="w-6 h-6 md:w-7 md:h-7 text-white"
                 fill="none"
@@ -73,7 +73,7 @@ export default function Header({ lang, navigation }: HeaderProps) {
               </svg>
             </div>
             <div className="hidden sm:block">
-              <div className="text-sm md:text-base font-bold text-gray-900 leading-tight">
+              <div className="text-sm md:text-base font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors">
                 {lang === 'ar' ? 'مؤسسة أحمد فرحان سعيد المرشود' : 'AHMED FARHAN SAID AL-MARSHOUD'}
               </div>
               <div className="text-xs text-gray-600">
@@ -88,9 +88,9 @@ export default function Header({ lang, navigation }: HeaderProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   isActivePage(item.href)
-                    ? 'bg-primary text-white'
+                    ? 'bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-md'
                     : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
                 }`}
               >

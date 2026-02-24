@@ -109,7 +109,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Apply appropriate font based on language
     - _Requirements: 3.2, 3.3, 9.1_
 
-  - [-] 4.2 Implement Header component
+  - [x] 4.2 Implement Header component
     - Create components/layout/Header.tsx
     - Display logo and company name
     - Render navigation menu with links
@@ -175,7 +175,7 @@ The implementation follows an incremental approach: starting with project setup 
     - **Validates: Requirements 8.7**
 
 - [ ] 6. Homepage implementation
-  - [~] 6.1 Create homepage route and load content
+  - [-] 6.1 Create homepage route and load content
     - Create app/[lang]/page.tsx
     - Implement generateStaticParams for en and ar
     - Load home content using loadContent function

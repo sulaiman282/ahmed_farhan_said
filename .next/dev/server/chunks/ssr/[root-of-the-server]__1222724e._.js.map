@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///G:/Projects/In_Progress/Company%20portfolio%20ahmend%20farhan%20said%20saudi/app/page.tsx"],"sourcesContent":["import { redirect } from 'next/navigation';\nimport { headers } from 'next/headers';\n\nexport default async function RootPage() {\n  const headersList = await headers();\n  const acceptLanguage = headersList.get('accept-language') || '';\n\n  // Detect language from Accept-Language header\n  // Default to Arabic for Saudi Arabia locale, English otherwise\n  const lang = acceptLanguage.includes('ar') ? 'ar' : 'en';\n\n  redirect(`/${lang}`);\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;AACA;;;AAEe,eAAe;IAC5B,MAAM,cAAc,MAAM,IAAA,0IAAO;IACjC,MAAM,iBAAiB,YAAY,GAAG,CAAC,sBAAsB;IAE7D,8CAA8C;IAC9C,+DAA+D;IAC/D,MAAM,OAAO,eAAe,QAAQ,CAAC,QAAQ,OAAO;IAEpD,IAAA,iMAAQ,EAAC,CAAC,CAAC,EAAE,MAAM;AACrB"}}]
+}

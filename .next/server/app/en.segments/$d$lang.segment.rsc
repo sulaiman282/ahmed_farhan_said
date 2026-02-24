@@ -1,5 +1,6 @@
 1:"$Sreact.fragment"
-2:I[39756,["/_next/static/chunks/2f236954d6a65e12.js"],"default"]
-3:I[37457,["/_next/static/chunks/2f236954d6a65e12.js"],"default"]
+2:I[93983,["/_next/static/chunks/20d6332bc75ebcc4.js"],"default"]
+3:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+4:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
 :HL["/_next/static/chunks/8c8edf6c0bbec370.css","style"]
-0:{"buildId":"J6_ZR2TJ_n-cDYpBrlhza","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8c8edf6c0bbec370.css","precedence":"next"}]],["$","html",null,{"lang":"en","dir":"ltr","children":["$","body",null,{"className":"inter_7b064e0d-module__MOT0tq__variable inter_7b064e0d-module__MOT0tq__variable cairo_863186ba-module__NBnCba__variable antialiased font-sans","children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"HqS1FAEVW7Oe2zhrxSFby","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8c8edf6c0bbec370.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/20d6332bc75ebcc4.js","async":true}]],["$","html",null,{"lang":"en","dir":"ltr","children":["$","body",null,{"className":"inter_7b064e0d-module__MOT0tq__variable inter_7b064e0d-module__MOT0tq__variable cairo_863186ba-module__NBnCba__variable antialiased font-sans","children":[["$","$L2",null,{"lang":"en","navigation":[{"label":"Home","href":"/en"},{"label":"About","href":"/en/about"},{"label":"Services","href":"/en/services"},{"label":"Portfolio","href":"/en/portfolio"},{"label":"Testimonials","href":"/en/testimonials"},{"label":"Contact","href":"/en/contact"}]}],["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}]}]]}],"loading":null,"isPartial":false}

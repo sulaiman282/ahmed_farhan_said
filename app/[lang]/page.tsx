@@ -1,5 +1,10 @@
-import { Language } from '@/types/content';
-import LanguageSwitcher from '@/components/layout/LanguageSwitcher';
+import { Language, HomeContent } from '@/types/content';
+import { loadContent } from '@/lib/content/loader';
+import HeroSection from '@/components/home/HeroSection';
+import AboutSection from '@/components/home/AboutSection';
+import WhyChooseSection from '@/components/home/WhyChooseSection';
+import ServicesPreview from '@/components/home/ServicesPreview';
+import CTASection from '@/components/home/CTASection';
 
 export default async function HomePage({
   params,
@@ -7,26 +12,15 @@ export default async function HomePage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const homeContent = await loadContent<HomeContent>(lang as Language, 'home');
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="p-4 border-b">
-        <div className="container mx-auto flex justify-end">
-          <LanguageSwitcher currentLang={lang as Language} />
-        </div>
-      </header>
-      <main className="flex flex-1 items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">
-            {lang === 'ar' ? 'مرحباً' : 'Welcome'}
-          </h1>
-          <p className="text-lg text-gray-600">
-            {lang === 'ar'
-              ? 'أحمد فرحان سعيد المرشود للمقاولات العامة'
-              : 'AHMED FARHAN SAID AL-MARSHOUD FOR GENERAL CONTRACTING EST.'}
-          </p>
-        </div>
-      </main>
+      <HeroSection hero={homeContent.hero} lang={lang as Language} />
+      <AboutSection about={homeContent.about} lang={lang as Language} />
+      <WhyChooseSection whyChoose={homeContent.whyChoose} lang={lang as Language} />
+      <ServicesPreview servicesPreview={homeContent.servicesPreview} lang={lang as Language} />
+      <CTASection cta={homeContent.cta} lang={lang as Language} />
     </div>
   );
 }

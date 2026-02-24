@@ -33,7 +33,7 @@ export default async function LanguageLayout({
   const fontClass = lang === 'ar' ? cairo.variable : inter.variable;
 
   // Load navigation content
-  const navigationContent = await loadContent<{ mainMenu: any[] }>(
+  const navigationContent = await loadContent(
     lang as Language,
     'navigation'
   );
