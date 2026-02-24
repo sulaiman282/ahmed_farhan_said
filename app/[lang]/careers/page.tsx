@@ -16,21 +16,58 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === 'ar' 
+    ? 'الوظائف | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'Careers | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const description = lang === 'ar'
+    ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'Join our team and explore career opportunities at Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const siteUrl = 'https://almarshoud-contracting.sa';
+  const logoUrl = `${siteUrl}/logo.png`;
+
   return {
-    title: lang === 'ar' 
-      ? 'الوظائف | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'Careers | Al-Marshoud Contracting',
-    description: lang === 'ar'
-      ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'Join our team and explore career opportunities at Al-Marshoud Contracting',
+    title,
+    description,
+    keywords: lang === 'ar'
+      ? 'وظائف، فرص عمل، توظيف، انضم لفريقنا، مقاولات، المملكة العربية السعودية'
+      : 'careers, jobs, employment, join our team, contracting, Saudi Arabia',
+    authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${lang}/careers`,
+      languages: {
+        'en': '/en/careers',
+        'ar': '/ar/careers',
+      },
+    },
     openGraph: {
-      title: lang === 'ar' 
-        ? 'الوظائف | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-        : 'Careers | Al-Marshoud Contracting',
-      description: lang === 'ar'
-        ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
-        : 'Join our team and explore career opportunities at Al-Marshoud Contracting',
       type: 'website',
+      locale: lang === 'ar' ? 'ar_SA' : 'en_US',
+      url: `${siteUrl}/${lang}/careers`,
+      title,
+      description,
+      siteName: lang === 'ar' 
+        ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+      images: [
+        {
+          url: logoUrl,
+          width: 1200,
+          height: 630,
+          alt: lang === 'ar' 
+            ? 'الوظائف - مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+            : 'Careers - Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [logoUrl],
+      creator: '@almarshoud_sa',
     },
   };
 }

@@ -15,21 +15,58 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === 'ar' 
+    ? 'آراء العملاء | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'Testimonials | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const description = lang === 'ar'
+    ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
+    : 'Read what our clients say about our manpower solutions and contracting services';
+  
+  const siteUrl = 'https://almarshoud-contracting.sa';
+  const logoUrl = `${siteUrl}/logo.png`;
+
   return {
-    title: lang === 'ar' 
-      ? 'آراء العملاء | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'Testimonials | Al-Marshoud Contracting',
-    description: lang === 'ar'
-      ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
-      : 'Read what our clients say about our manpower solutions and contracting services',
+    title,
+    description,
+    keywords: lang === 'ar'
+      ? 'آراء العملاء، تقييمات، شهادات، تجارب العملاء، رضا العملاء'
+      : 'testimonials, reviews, client feedback, customer experiences, client satisfaction',
+    authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${lang}/testimonials`,
+      languages: {
+        'en': '/en/testimonials',
+        'ar': '/ar/testimonials',
+      },
+    },
     openGraph: {
-      title: lang === 'ar' 
-        ? 'آراء العملاء | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-        : 'Testimonials | Al-Marshoud Contracting',
-      description: lang === 'ar'
-        ? 'اقرأ آراء عملائنا وتجاربهم مع خدمات القوى العاملة والمقاولات التي نقدمها'
-        : 'Read what our clients say about our manpower solutions and contracting services',
       type: 'website',
+      locale: lang === 'ar' ? 'ar_SA' : 'en_US',
+      url: `${siteUrl}/${lang}/testimonials`,
+      title,
+      description,
+      siteName: lang === 'ar' 
+        ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+      images: [
+        {
+          url: logoUrl,
+          width: 1200,
+          height: 630,
+          alt: lang === 'ar' 
+            ? 'آراء العملاء - مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+            : 'Testimonials - Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [logoUrl],
+      creator: '@almarshoud_sa',
     },
   };
 }

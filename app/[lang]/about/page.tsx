@@ -18,13 +18,59 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === 'ar' 
+    ? 'من نحن | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'About Us | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const description = lang === 'ar'
+    ? 'تعرف على مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة، الرائدة في حلول القوى العاملة وخدمات المقاولات في المملكة العربية السعودية منذ 2009. سجل تجاري: 2050026004-2، رقم ضريبي: 310792600003'
+    : 'Learn about Ahmed Farhan Said Al-Marshoud For General Contracting Est., a leading provider of manpower solutions and general contracting services in Saudi Arabia since 2009. CR: 2050026004-2, VAT: 310792600003';
+  
+  const siteUrl = 'https://almarshoud-contracting.sa';
+  const logoUrl = `${siteUrl}/logo.png`;
+
   return {
-    title: lang === 'ar' 
-      ? 'من نحن | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'About Us | Al-Marshoud Contracting',
-    description: lang === 'ar'
-      ? 'تعرف على شركة أحمد فرحان سعيد المرشود للمقاولات العامة، الرائدة في حلول القوى العاملة وخدمات المقاولات في المملكة العربية السعودية منذ 2009'
-      : 'Learn about Al-Marshoud Contracting, a leading provider of manpower solutions and general contracting services in Saudi Arabia since 2009',
+    title,
+    description,
+    keywords: lang === 'ar'
+      ? 'من نحن، تاريخ الشركة، قيمنا، شهادات، مقاولات عامة، المملكة العربية السعودية'
+      : 'about us, company history, our values, certifications, general contracting, Saudi Arabia',
+    authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${lang}/about`,
+      languages: {
+        'en': '/en/about',
+        'ar': '/ar/about',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: lang === 'ar' ? 'ar_SA' : 'en_US',
+      url: `${siteUrl}/${lang}/about`,
+      title,
+      description,
+      siteName: lang === 'ar' 
+        ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+      images: [
+        {
+          url: logoUrl,
+          width: 1200,
+          height: 630,
+          alt: lang === 'ar' 
+            ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+            : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [logoUrl],
+      creator: '@almarshoud_sa',
+    },
   };
 }
 

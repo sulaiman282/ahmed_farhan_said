@@ -48,13 +48,59 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === 'ar' 
+    ? 'اتصل بنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'Contact | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const description = lang === 'ar'
+    ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك. الخبر، المملكة العربية السعودية'
+    : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help. Al-Khobar, Saudi Arabia';
+  
+  const siteUrl = 'https://almarshoud-contracting.sa';
+  const logoUrl = `${siteUrl}/logo.png`;
+
   return {
-    title: lang === 'ar' 
-      ? 'اتصل بنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'Contact | Al-Marshoud Contracting',
-    description: lang === 'ar'
-      ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك'
-      : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help',
+    title,
+    description,
+    keywords: lang === 'ar'
+      ? 'اتصل بنا، معلومات الاتصال، الخبر، المملكة العربية السعودية، ahd05132f@gmail.com'
+      : 'contact us, contact information, Al-Khobar, Saudi Arabia, ahd05132f@gmail.com',
+    authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${lang}/contact`,
+      languages: {
+        'en': '/en/contact',
+        'ar': '/ar/contact',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: lang === 'ar' ? 'ar_SA' : 'en_US',
+      url: `${siteUrl}/${lang}/contact`,
+      title,
+      description,
+      siteName: lang === 'ar' 
+        ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+      images: [
+        {
+          url: logoUrl,
+          width: 1200,
+          height: 630,
+          alt: lang === 'ar' 
+            ? 'اتصل بنا - مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+            : 'Contact Us - Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [logoUrl],
+      creator: '@almarshoud_sa',
+    },
   };
 }
 

@@ -95,12 +95,14 @@
   "partners": {
     "title": "Our Trusted Partners",
     "items": [
-      { "name": "Saudi Aramco", "logo": "/images/partners/aramco.png" },
-      { "name": "SABIC", "logo": "/images/partners/sabic.png" },
-      { "name": "Saudi Electricity", "logo": "/images/partners/sec.png" },
-      { "name": "Riyadh Metro", "logo": "/images/partners/metro.png" },
-      { "name": "NEOM", "logo": "/images/partners/neom.png" },
-      { "name": "Red Sea Development", "logo": "/images/partners/redsea.png" }
+      { "name": "Client Logo 1", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+1" },
+      { "name": "Client Logo 2", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+2" },
+      { "name": "Client Logo 3", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+3" },
+      { "name": "Client Logo 4", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+4" },
+      { "name": "Client Logo 5", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+5" },
+      { "name": "Client Logo 6", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+6" },
+      { "name": "Client Logo 7", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+7" },
+      { "name": "Client Logo 8", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+8" }
     ]
   },
   "faq": {

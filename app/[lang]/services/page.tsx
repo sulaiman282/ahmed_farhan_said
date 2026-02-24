@@ -10,21 +10,58 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === 'ar' 
+    ? 'خدماتنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+    : 'Services | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
+  
+  const description = lang === 'ar'
+    ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
+    : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia';
+  
+  const siteUrl = 'https://almarshoud-contracting.sa';
+  const logoUrl = `${siteUrl}/logo.png`;
+
   return {
-    title: lang === 'ar' 
-      ? 'خدماتنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-      : 'Services | Al-Marshoud Contracting',
-    description: lang === 'ar'
-      ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
-      : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',
+    title,
+    description,
+    keywords: lang === 'ar'
+      ? 'توريد قوى عاملة، توظيف، مقاولات عامة، إدارة مشاريع، صيانة، استشارات، المملكة العربية السعودية'
+      : 'manpower supply, recruitment, general contracting, project management, maintenance, consulting, Saudi Arabia',
+    authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${lang}/services`,
+      languages: {
+        'en': '/en/services',
+        'ar': '/ar/services',
+      },
+    },
     openGraph: {
-      title: lang === 'ar' 
-        ? 'خدماتنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
-        : 'Services | Al-Marshoud Contracting',
-      description: lang === 'ar'
-        ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
-        : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',
       type: 'website',
+      locale: lang === 'ar' ? 'ar_SA' : 'en_US',
+      url: `${siteUrl}/${lang}/services`,
+      title,
+      description,
+      siteName: lang === 'ar' 
+        ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+      images: [
+        {
+          url: logoUrl,
+          width: 1200,
+          height: 630,
+          alt: lang === 'ar' 
+            ? 'خدماتنا - مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+            : 'Our Services - Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [logoUrl],
+      creator: '@almarshoud_sa',
     },
   };
 }

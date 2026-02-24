@@ -13,11 +13,11 @@
       "id": "project-1",
       "title": "Riyadh Commercial Complex",
       "category": "Commercial",
-      "thumbnail": "/images/portfolio/project-1-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+1",
       "images": [
-        "/images/portfolio/project-1-1.jpg",
-        "/images/portfolio/project-1-2.jpg",
-        "/images/portfolio/project-1-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+1+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+1+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+1+Image+3"
       ],
       "description": "A modern commercial complex featuring retail spaces, offices, and parking facilities spanning 50,000 square meters.",
       "completionDate": "2023-06",
@@ -28,10 +28,10 @@
       "id": "project-2",
       "title": "Jeddah Residential Towers",
       "category": "Residential",
-      "thumbnail": "/images/portfolio/project-2-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+2",
       "images": [
-        "/images/portfolio/project-2-1.jpg",
-        "/images/portfolio/project-2-2.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+2+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+2+Image+2"
       ],
       "description": "Twin residential towers with 200 luxury apartments, complete with amenities and underground parking.",
       "completionDate": "2023-03",
@@ -42,12 +42,12 @@
       "id": "project-3",
       "title": "Dammam Industrial Facility",
       "category": "Industrial",
-      "thumbnail": "/images/portfolio/project-3-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+3",
       "images": [
-        "/images/portfolio/project-3-1.jpg",
-        "/images/portfolio/project-3-2.jpg",
-        "/images/portfolio/project-3-3.jpg",
-        "/images/portfolio/project-3-4.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+3+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+3+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+3+Image+3",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+3+Image+4"
       ],
       "description": "State-of-the-art manufacturing facility with warehouse and administrative offices.",
       "completionDate": "2022-12",
@@ -58,10 +58,10 @@
       "id": "project-4",
       "title": "Makkah Hotel Renovation",
       "category": "Commercial",
-      "thumbnail": "/images/portfolio/project-4-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+4",
       "images": [
-        "/images/portfolio/project-4-1.jpg",
-        "/images/portfolio/project-4-2.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+4+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+4+Image+2"
       ],
       "description": "Complete renovation of a 150-room hotel including guest rooms, lobby, and dining facilities.",
       "completionDate": "2023-09",
@@ -72,11 +72,11 @@
       "id": "project-5",
       "title": "Al-Khobar Villa Community",
       "category": "Residential",
-      "thumbnail": "/images/portfolio/project-5-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+5",
       "images": [
-        "/images/portfolio/project-5-1.jpg",
-        "/images/portfolio/project-5-2.jpg",
-        "/images/portfolio/project-5-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+5+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+5+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+5+Image+3"
       ],
       "description": "Gated community of 50 luxury villas with landscaping and community facilities.",
       "completionDate": "2023-01",
@@ -87,10 +87,10 @@
       "id": "project-6",
       "title": "Riyadh Metro Station",
       "category": "Infrastructure",
-      "thumbnail": "/images/portfolio/project-6-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+6",
       "images": [
-        "/images/portfolio/project-6-1.jpg",
-        "/images/portfolio/project-6-2.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+6+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+6+Image+2"
       ],
       "description": "Construction of metro station facilities including platforms, ticketing areas, and access points.",
       "completionDate": "2022-08",
@@ -101,11 +101,11 @@
       "id": "project-7",
       "title": "Jubail Warehouse Complex",
       "category": "Industrial",
-      "thumbnail": "/images/portfolio/project-7-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+7",
       "images": [
-        "/images/portfolio/project-7-1.jpg",
-        "/images/portfolio/project-7-2.jpg",
-        "/images/portfolio/project-7-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+7+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+7+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+7+Image+3"
       ],
       "description": "Large-scale warehouse and logistics facility with modern storage systems.",
       "completionDate": "2023-04",
@@ -116,11 +116,11 @@
       "id": "project-8",
       "title": "Medina Shopping Mall",
       "category": "Commercial",
-      "thumbnail": "/images/portfolio/project-8-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+8",
       "images": [
-        "/images/portfolio/project-8-1.jpg",
-        "/images/portfolio/project-8-2.jpg",
-        "/images/portfolio/project-8-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+8+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+8+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+8+Image+3"
       ],
       "description": "Modern shopping mall with 100+ retail units, food court, and entertainment facilities.",
       "completionDate": "2022-11",
@@ -131,10 +131,10 @@
       "id": "project-9",
       "title": "Yanbu Road Infrastructure",
       "category": "Infrastructure",
-      "thumbnail": "/images/portfolio/project-9-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+9",
       "images": [
-        "/images/portfolio/project-9-1.jpg",
-        "/images/portfolio/project-9-2.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+9+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+9+Image+2"
       ],
       "description": "Road construction and infrastructure development including utilities and landscaping.",
       "completionDate": "2023-07",
@@ -145,11 +145,11 @@
       "id": "project-10",
       "title": "Abha Resort Development",
       "category": "Commercial",
-      "thumbnail": "/images/portfolio/project-10-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+10",
       "images": [
-        "/images/portfolio/project-10-1.jpg",
-        "/images/portfolio/project-10-2.jpg",
-        "/images/portfolio/project-10-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+10+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+10+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+10+Image+3"
       ],
       "description": "Tourist resort with chalets, restaurant, and recreational facilities.",
       "completionDate": "2023-05",
@@ -160,10 +160,10 @@
       "id": "project-11",
       "title": "Taif Residential Compound",
       "category": "Residential",
-      "thumbnail": "/images/portfolio/project-11-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+11",
       "images": [
-        "/images/portfolio/project-11-1.jpg",
-        "/images/portfolio/project-11-2.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+11+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+11+Image+2"
       ],
       "description": "Residential compound with 80 units, swimming pool, gym, and children's play area.",
       "completionDate": "2022-10",
@@ -174,11 +174,11 @@
       "id": "project-12",
       "title": "Khamis Mushait Factory",
       "category": "Industrial",
-      "thumbnail": "/images/portfolio/project-12-thumb.jpg",
+      "thumbnail": "https://placehold.co/400x300/0066cc/ffffff?text=Project+12",
       "images": [
-        "/images/portfolio/project-12-1.jpg",
-        "/images/portfolio/project-12-2.jpg",
-        "/images/portfolio/project-12-3.jpg"
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+12+Image+1",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+12+Image+2",
+        "https://placehold.co/800x600/0066cc/ffffff?text=Project+12+Image+3"
       ],
       "description": "Industrial manufacturing facility with production lines and quality control areas.",
       "completionDate": "2023-02",

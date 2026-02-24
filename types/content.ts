@@ -23,6 +23,9 @@ export interface HomeContent {
   servicesPreview: ServicesPreviewSection;
   testimonialsPreview: TestimonialsPreviewSection;
   galleryPreview: GalleryPreviewSection;
+  partners: PartnersSection;
+  faq: FAQSection;
+  newsletter: NewsletterSection;
   cta: CTASection;
 }
 
@@ -86,6 +89,50 @@ export interface TestimonialsPreviewSection {
 export interface GalleryPreviewSection {
   title: string;
   viewAllLink: string;
+}
+
+/**
+ * Partners section on homepage
+ */
+export interface PartnersSection {
+  title: string;
+  items: PartnerItem[];
+}
+
+/**
+ * Individual partner item
+ */
+export interface PartnerItem {
+  name: string;
+  logo: string;
+}
+
+/**
+ * FAQ section on homepage
+ */
+export interface FAQSection {
+  title: string;
+  items: FAQItem[];
+}
+
+/**
+ * Individual FAQ item
+ */
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+/**
+ * Newsletter section on homepage
+ */
+export interface NewsletterSection {
+  title: string;
+  description: string;
+  placeholder: string;
+  buttonText: string;
+  successMessage: string;
+  errorMessage: string;
 }
 
 /**

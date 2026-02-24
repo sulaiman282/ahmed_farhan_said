@@ -95,12 +95,14 @@
   "partners": {
     "title": "شركاؤنا الموثوقون",
     "items": [
-      { "name": "أرامكو السعودية", "logo": "/images/partners/aramco.png" },
-      { "name": "سابك", "logo": "/images/partners/sabic.png" },
-      { "name": "الكهرباء السعودية", "logo": "/images/partners/sec.png" },
-      { "name": "مترو الرياض", "logo": "/images/partners/metro.png" },
-      { "name": "نيوم", "logo": "/images/partners/neom.png" },
-      { "name": "تطوير البحر الأحمر", "logo": "/images/partners/redsea.png" }
+      { "name": "شعار عميل 1", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+1" },
+      { "name": "شعار عميل 2", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+2" },
+      { "name": "شعار عميل 3", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+3" },
+      { "name": "شعار عميل 4", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+4" },
+      { "name": "شعار عميل 5", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+5" },
+      { "name": "شعار عميل 6", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+6" },
+      { "name": "شعار عميل 7", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+7" },
+      { "name": "شعار عميل 8", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+8" }
     ]
   },
   "faq": {
