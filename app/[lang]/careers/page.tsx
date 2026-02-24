@@ -18,15 +18,15 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'الوظائف - المرشود للمقاولات'
-      : 'Careers - Al-Marshoud Contracting',
+      ? 'الوظائف | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Careers | Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
       : 'Join our team and explore career opportunities at Al-Marshoud Contracting',
     openGraph: {
       title: lang === 'ar' 
-        ? 'الوظائف - المرشود للمقاولات'
-        : 'Careers - Al-Marshoud Contracting',
+        ? 'الوظائف | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Careers | Al-Marshoud Contracting',
       description: lang === 'ar'
         ? 'انضم إلى فريقنا واستكشف الفرص الوظيفية المتاحة في شركة أحمد فرحان سعيد المرشود للمقاولات العامة'
         : 'Join our team and explore career opportunities at Al-Marshoud Contracting',

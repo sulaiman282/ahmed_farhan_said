@@ -50,8 +50,8 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'اتصل بنا - المرشود للمقاولات'
-      : 'Contact Us - Al-Marshoud Contracting',
+      ? 'اتصل بنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Contact | Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك'
       : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help',

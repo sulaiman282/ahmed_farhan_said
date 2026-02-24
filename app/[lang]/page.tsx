@@ -25,8 +25,8 @@ export async function generateMetadata({
   
   return {
     title: lang === 'ar' 
-      ? 'أحمد فرحان المرشود للمقاولات - حلول القوى العاملة'
-      : 'Al-Marshoud Contracting - Manpower & Contracting',
+      ? 'الرئيسية | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Home | Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'شريكك الموثوق في حلول القوى العاملة وخدمات المقاولات العامة في المملكة العربية السعودية'
       : 'Your trusted partner in manpower solutions and general contracting services in Saudi Arabia',

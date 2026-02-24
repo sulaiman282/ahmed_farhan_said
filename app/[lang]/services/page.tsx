@@ -12,15 +12,15 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'خدماتنا - المرشود للمقاولات'
-      : 'Our Services - Al-Marshoud Contracting',
+      ? 'خدماتنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'Services | Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
       : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',
     openGraph: {
       title: lang === 'ar' 
-        ? 'خدماتنا - المرشود للمقاولات'
-        : 'Our Services - Al-Marshoud Contracting',
+        ? 'خدماتنا | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+        : 'Services | Al-Marshoud Contracting',
       description: lang === 'ar'
         ? 'نقدم حلول شاملة للقوى العاملة، التوظيف، المقاولات العامة، إدارة المشاريع، الصيانة والاستشارات في المملكة العربية السعودية'
         : 'Comprehensive manpower supply, recruitment, general contracting, project management, maintenance and consulting services in Saudi Arabia',

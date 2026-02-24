@@ -20,8 +20,8 @@ export async function generateMetadata({
 
   return {
     title: lang === 'ar' 
-      ? 'من نحن - المرشود للمقاولات'
-      : 'About Us - Al-Marshoud Contracting',
+      ? 'من نحن | مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة'
+      : 'About Us | Al-Marshoud Contracting',
     description: lang === 'ar'
       ? 'تعرف على شركة أحمد فرحان سعيد المرشود للمقاولات العامة، الرائدة في حلول القوى العاملة وخدمات المقاولات في المملكة العربية السعودية منذ 2009'
       : 'Learn about Al-Marshoud Contracting, a leading provider of manpower solutions and general contracting services in Saudi Arabia since 2009',
