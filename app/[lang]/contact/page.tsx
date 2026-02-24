@@ -64,7 +64,7 @@ export default async function ContactPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const content = await loadContent<ContactContent>(lang as Language, 'contact');
+  const content = await loadContent(lang as Language, 'contact');
 
   const isRTL = lang === 'ar';
 

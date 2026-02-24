@@ -34,7 +34,7 @@ export default async function AboutPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const content = await loadContent<AboutContent>(lang as Language, 'about');
+  const content = await loadContent(lang as Language, 'about');
   const dir = getDirection(lang as Language);
 
   return (

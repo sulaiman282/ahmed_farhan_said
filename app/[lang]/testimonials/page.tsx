@@ -40,7 +40,7 @@ export default async function TestimonialsPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const content = await loadContent<TestimonialsContent>(lang as Language, 'testimonials');
+  const content = await loadContent(lang as Language, 'testimonials');
   const isRTL = lang === 'ar';
 
   return (

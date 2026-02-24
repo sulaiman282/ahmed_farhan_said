@@ -39,7 +39,7 @@ export default async function HomePage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const homeContent = await loadContent<HomeContent>(lang as Language, 'home');
+  const homeContent = await loadContent(lang as Language, 'home');
   const testimonialsContent = await loadContent(lang as Language, 'testimonials');
   const portfolioContent = await loadContent(lang as Language, 'portfolio');
 

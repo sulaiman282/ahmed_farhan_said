@@ -39,7 +39,7 @@ export default async function ServicesPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const servicesContent = await loadContent<ServicesContent>(lang as Language, 'services');
+  const servicesContent = await loadContent(lang as Language, 'services');
 
   return <ServicesPageClient servicesContent={servicesContent} lang={lang as Language} />;
 }

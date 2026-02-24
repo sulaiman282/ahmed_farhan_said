@@ -41,7 +41,7 @@ export default async function PortfolioPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const content = await loadContent<PortfolioContent>(lang as Language, 'portfolio');
+  const content = await loadContent(lang as Language, 'portfolio');
   const dir = getDirection(lang as Language);
   const isRTL = lang === 'ar';
 

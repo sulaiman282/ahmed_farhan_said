@@ -79,7 +79,7 @@ export default function NewsletterSection({
           </div>
 
           <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3" suppressHydrationWarning>
               <input
                 type="email"
                 value={email}
@@ -87,6 +87,7 @@ export default function NewsletterSection({
                 placeholder={placeholder}
                 className="flex-1 px-6 py-4 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
                 disabled={status === 'loading'}
+                suppressHydrationWarning
               />
               <button
                 type="submit"

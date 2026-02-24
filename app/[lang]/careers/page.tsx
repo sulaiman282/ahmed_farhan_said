@@ -41,7 +41,7 @@ export default async function CareersPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const content = await loadContent<CareersContent>(lang as Language, 'careers');
+  const content = await loadContent(lang as Language, 'careers');
   const dir = getDirection(lang as Language);
 
   return (
