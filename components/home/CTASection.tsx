@@ -108,7 +108,7 @@ export default function CTASection({ cta, lang }: CTASectionProps) {
                 <div className="text-sm text-gray-200">
                   {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
                 </div>
-                <div className="font-semibold">+966 XX XXX XXXX</div>
+                <div className="font-semibold">+966 53 309 2858</div>
               </div>
             </div>
 
@@ -122,7 +122,7 @@ export default function CTASection({ cta, lang }: CTASectionProps) {
                 <div className="text-sm text-gray-200">
                   {lang === 'ar' ? 'راسلنا' : 'Email Us'}
                 </div>
-                <div className="font-semibold">info@example.com</div>
+                <div className="font-semibold">ah4051321@gmail.com</div>
               </div>
             </div>
           </div>

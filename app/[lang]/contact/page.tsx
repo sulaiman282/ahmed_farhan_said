@@ -53,8 +53,8 @@ export async function generateMetadata({
     : 'Contact | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
   
   const description = lang === 'ar'
-    ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك. الخبر، المملكة العربية السعودية'
-    : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help. Al-Khobar, Saudi Arabia';
+    ? 'تواصل معنا لمناقشة احتياجاتك من القوى العاملة والمقاولات. نحن هنا لمساعدتك. صبيخة، الخبر، المملكة العربية السعودية. هاتف: +966 53 309 2858'
+    : 'Get in touch with us to discuss your manpower and contracting needs. We are here to help. Sobaikha, Al-Khobar, Saudi Arabia. Phone: +966 53 309 2858';
   
   const siteUrl = 'https://almarshoud-contracting.sa';
   const logoUrl = `${siteUrl}/logo.png`;
@@ -63,8 +63,8 @@ export async function generateMetadata({
     title,
     description,
     keywords: lang === 'ar'
-      ? 'اتصل بنا، معلومات الاتصال، الخبر، المملكة العربية السعودية، ahd05132f@gmail.com'
-      : 'contact us, contact information, Al-Khobar, Saudi Arabia, ahd05132f@gmail.com',
+      ? 'اتصل بنا، معلومات الاتصال، صبيخة، الخبر، المملكة العربية السعودية، ah4051321@gmail.com، 0533092858'
+      : 'contact us, contact information, Sobaikha, Al-Khobar, Saudi Arabia, ah4051321@gmail.com, +966533092858',
     authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
     metadataBase: new URL(siteUrl),
     alternates: {

@@ -28,8 +28,8 @@ export async function generateMetadata({
     : 'Home | Ahmed Farhan Said Al-Marshoud For General Contracting Est.';
   
   const description = lang === 'ar'
-    ? 'شريكك الموثوق في حلول القوى العاملة وخدمات المقاولات العامة في المملكة العربية السعودية. سجل تجاري: 2050026004-2'
-    : 'Your trusted partner in manpower solutions and general contracting services in Saudi Arabia. CR: 2050026004-2';
+    ? 'شريكك الموثوق في حلول القوى العاملة وخدمات المقاولات العامة في المملكة العربية السعودية. صبيخة، الخبر. هاتف: +966 53 309 2858 | البريد: ah4051321@gmail.com'
+    : 'Your trusted partner in manpower solutions and general contracting services in Saudi Arabia. Sobaikha, Al-Khobar. Phone: +966 53 309 2858 | Email: ah4051321@gmail.com';
   
   const siteUrl = 'https://almarshoud-contracting.sa';
   const logoUrl = `${siteUrl}/logo.png`;
@@ -38,8 +38,8 @@ export async function generateMetadata({
     title,
     description,
     keywords: lang === 'ar'
-      ? 'مقاولات عامة، توريد قوى عاملة، توظيف، إدارة مشاريع، صيانة، المملكة العربية السعودية، الخبر'
-      : 'general contracting, manpower supply, recruitment, project management, maintenance, Saudi Arabia, Al-Khobar',
+      ? 'مقاولات عامة، توريد قوى عاملة، توظيف، إدارة مشاريع، صيانة، المملكة العربية السعودية، الخبر، صبيخة، سراكو، أرامكو'
+      : 'general contracting, manpower supply, recruitment, project management, maintenance, Saudi Arabia, Al-Khobar, Sobaikha, SARACO, ARAMCO',
     authors: [{ name: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.' }],
     creator: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
     publisher: 'Ahmed Farhan Said Al-Marshoud For General Contracting Est.',
