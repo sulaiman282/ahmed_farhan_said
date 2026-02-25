@@ -53,14 +53,14 @@ export default function WhyChooseSection({ whyChoose, lang }: WhyChooseSectionPr
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             {whyChoose.title}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-700 mx-auto rounded-full"></div>
@@ -80,19 +80,19 @@ export default function WhyChooseSection({ whyChoose, lang }: WhyChooseSectionPr
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
                 
                 {/* Card */}
-                <div className="relative h-full bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group-hover:border-primary-200 group-hover:-translate-y-2">
+                <div className="relative h-full bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group-hover:border-primary-200 dark:group-hover:border-primary-600 group-hover:-translate-y-2">
                   {/* Icon */}
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     {iconMap[item.icon] || iconMap['star']}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                     {item.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {item.description}
                   </p>
 

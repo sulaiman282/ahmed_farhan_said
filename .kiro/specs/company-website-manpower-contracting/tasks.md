@@ -69,7 +69,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Create content/ar/careers.json with translated content
     - _Requirements: 2.1-2.7, 3.4_
 
-  - [~] 2.5 Write property test for content translation completeness
+  - [ ] 2.5 Write property test for content translation completeness
     - **Property 3: Content Translation Completeness**
     - **Validates: Requirements 3.4**
 
@@ -89,15 +89,15 @@ The implementation follows an incremental approach: starting with project setup 
     - Create setLanguageCookie function
     - _Requirements: 3.5, 3.6, 3.7_
 
-  - [~] 3.3 Write property test for language-direction consistency
+  - [ ] 3.3 Write property test for language-direction consistency
     - **Property 2: Language-Direction Consistency**
     - **Validates: Requirements 3.2, 3.3**
 
-  - [~] 3.4 Write property test for non-Saudi locale defaults
+  - [ ] 3.4 Write property test for non-Saudi locale defaults
     - **Property 5: Non-Saudi Locale Defaults to English**
     - **Validates: Requirements 3.7**
 
-  - [~] 3.5 Write property test for language preference persistence
+  - [ ] 3.5 Write property test for language preference persistence
     - **Property 4: Language Preference Persistence**
     - **Validates: Requirements 3.5**
 
@@ -142,15 +142,15 @@ The implementation follows an incremental approach: starting with project setup 
     - Position fixed in bottom corner (RTL-aware)
     - _Requirements: 9.7_
 
-  - [~] 4.6 Write property test for back-to-top button visibility
+  - [ ] 4.6 Write property test for back-to-top button visibility
     - **Property 15: Back-to-Top Button Visibility**
     - **Validates: Requirements 9.7**
 
-  - [~] 4.7 Write property test for consistent layout structure
+  - [ ] 4.7 Write property test for consistent layout structure
     - **Property 13: Consistent Layout Structure**
     - **Validates: Requirements 9.1, 9.4**
 
-  - [~] 4.8 Write property test for active page highlighting
+  - [ ] 4.8 Write property test for active page highlighting
     - **Property 14: Active Page Highlighting**
     - **Validates: Requirements 9.3**
 
@@ -170,7 +170,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Make reusable across service cards, portfolio items, job listings
     - _Requirements: 1.4, 4.2, 6.2_
 
-  - [~] 5.3 Write property test for interactive element touch target size
+  - [ ] 5.3 Write property test for interactive element touch target size
     - **Property 12: Interactive Element Touch Target Size**
     - **Validates: Requirements 8.7**
 
@@ -215,7 +215,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Apply category-specific styling
     - _Requirements: 1.4, 4.2, 4.5_
 
-  - [~] 6.7 Write property test for service card completeness
+  - [ ] 6.7 Write property test for service card completeness
     - **Property 1: Service Card Completeness**
     - **Validates: Requirements 1.4, 4.5**
 
@@ -227,11 +227,11 @@ The implementation follows an incremental approach: starting with project setup 
     - Display client photo or logo if available
     - _Requirements: 1.5, 11.1, 11.3, 11.4, 11.5, 11.6_
 
-  - [~] 6.9 Write property test for testimonial data completeness
+  - [ ] 6.9 Write property test for testimonial data completeness
     - **Property 20: Testimonial Data Completeness**
     - **Validates: Requirements 11.3, 11.4**
 
-  - [~] 6.10 Write property test for testimonial carousel navigation
+  - [ ] 6.10 Write property test for testimonial carousel navigation
     - **Property 21: Testimonial Carousel Navigation**
     - **Validates: Requirements 11.6**
 
@@ -248,7 +248,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Make reusable across multiple pages
     - _Requirements: 1.7, 12.2_
 
-  - [~] 6.13 Write property test for single H1 per page
+  - [ ] 6.13 Write property test for single H1 per page
     - **Property 19: Single H1 Per Page**
     - **Validates: Requirements 10.8**
 
@@ -276,11 +276,11 @@ The implementation follows an incremental approach: starting with project setup 
     - Support close/back navigation
     - _Requirements: 4.3_
 
-  - [~] 8.4 Write property test for service detail display completeness
+  - [ ] 8.4 Write property test for service detail display completeness
     - **Property 6: Service Detail Display Completeness**
     - **Validates: Requirements 4.3**
 
-  - [~] 8.5 Write property test for service categorization
+  - [ ] 8.5 Write property test for service categorization
     - **Property 7: Service Categorization**
     - **Validates: Requirements 4.4**
 
@@ -308,25 +308,25 @@ The implementation follows an incremental approach: starting with project setup 
     - Implement generateMetadata for SEO
     - _Requirements: 6.1, 10.3_
 
-  - [~] 10.2 Implement PortfolioGrid component
+  - [ ] 10.2 Implement PortfolioGrid component
     - Create components/portfolio/PortfolioGrid.tsx
     - Display portfolio items in responsive grid
     - Support filtering by selected category
     - Handle empty states
     - _Requirements: 6.2, 6.4, 6.5_
 
-  - [~] 10.3 Implement PortfolioFilter component
+  - [ ] 10.3 Implement PortfolioFilter component
     - Create components/portfolio/PortfolioFilter.tsx as client component
     - Display category filter buttons
     - Highlight active category
     - Include "All" option
     - _Requirements: 6.4_
 
-  - [~] 10.4 Write property test for portfolio category filtering
+  - [ ] 10.4 Write property test for portfolio category filtering
     - **Property 9: Portfolio Category Filtering**
     - **Validates: Requirements 6.4**
 
-  - [~] 10.5 Implement PortfolioItem component
+  - [ ] 10.5 Implement PortfolioItem component
     - Create components/portfolio/PortfolioItem.tsx
     - Display thumbnail with overlay
     - Show project title and category
@@ -334,11 +334,11 @@ The implementation follows an incremental approach: starting with project setup 
     - Implement hover effects
     - _Requirements: 6.2, 6.3_
 
-  - [~] 10.6 Write property test for portfolio item click behavior
+  - [ ] 10.6 Write property test for portfolio item click behavior
     - **Property 8: Portfolio Item Click Behavior**
     - **Validates: Requirements 6.3**
 
-  - [~] 10.7 Implement PortfolioModal component
+  - [ ] 10.7 Implement PortfolioModal component
     - Create components/portfolio/PortfolioModal.tsx as client component
     - Display project details with multiple images
     - Show project name, category, completion date, description, client, location
@@ -346,7 +346,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Implement keyboard navigation and focus trap
     - _Requirements: 6.3, 6.6, 6.7_
 
-  - [~] 10.8 Write property test for portfolio item data completeness
+  - [ ] 10.8 Write property test for portfolio item data completeness
     - **Property 10: Portfolio Item Data Completeness**
     - **Validates: Requirements 6.6, 6.7**
 
@@ -365,7 +365,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Embed Google Maps
     - _Requirements: 7.5, 7.6, 7.7, 12.6_
 
-  - [~] 11.3 Write property test for phone number click-to-call
+  - [ ] 11.3 Write property test for phone number click-to-call
     - **Property 23: Phone Number Click-to-Call**
     - **Validates: Requirements 12.6**
 
@@ -389,7 +389,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Return specific error messages for each field
     - _Requirements: 7.4_
 
-  - [~] 11.6 Write property test for contact form validation
+  - [ ] 11.6 Write property test for contact form validation
     - **Property 11: Contact Form Validation**
     - **Validates: Requirements 7.4**
 
@@ -401,7 +401,7 @@ The implementation follows an incremental approach: starting with project setup 
     - Track clicks with analytics
     - _Requirements: 7.8, 12.5, 15.4_
 
-  - [~] 11.8 Write property test for floating WhatsApp button presence
+  - [ ] 11.8 Write property test for floating WhatsApp button presence
     - **Property 22: Floating WhatsApp Button Presence**
     - **Validates: Requirements 12.5**
 
@@ -418,29 +418,29 @@ The implementation follows an incremental approach: starting with project setup 
     - Show "no openings" message when applicable
     - _Requirements: 13.6, 13.7_
 
-  - [~] 12.3 Implement JobListing component
+  - [ ] 12.3 Implement JobListing component
     - Create components/careers/JobListing.tsx
     - Display job card with title, location, type
     - Show posted date
     - Handle click to view details
     - _Requirements: 13.2_
 
-  - [~] 12.4 Write property test for job opening data completeness
+  - [ ] 12.4 Write property test for job opening data completeness
     - **Property 24: Job Opening Data Completeness**
     - **Validates: Requirements 13.2**
 
-  - [~] 12.5 Implement JobDetail component
+  - [ ] 12.5 Implement JobDetail component
     - Create components/careers/JobDetail.tsx as client component
     - Display full job description
     - Show requirements and benefits lists
     - Include application form or link
     - _Requirements: 13.3_
 
-  - [~] 12.6 Write property test for job detail display completeness
+  - [ ] 12.6 Write property test for job detail display completeness
     - **Property 25: Job Detail Display Completeness**
     - **Validates: Requirements 13.3**
 
-  - [~] 12.7 Implement ApplicationForm component
+  - [ ] 12.7 Implement ApplicationForm component
     - Create components/careers/ApplicationForm.tsx as client component
     - Render form fields: name, email, phone, position interest, resume upload
     - Handle file upload with validation
@@ -450,14 +450,14 @@ The implementation follows an incremental approach: starting with project setup 
     - Show success/error messages
     - _Requirements: 13.4, 13.5_
 
-  - [~] 12.8 Add resume validation to validation utility
+  - [ ] 12.8 Add resume validation to validation utility
     - Update lib/utils/validation.ts
     - Implement validateApplicationForm function
     - Validate file type and size
     - Return specific error messages
     - _Requirements: 13.5_
 
-  - [~] 12.9 Write property test for resume upload validation
+  - [ ] 12.9 Write property test for resume upload validation
     - **Property 26: Resume Upload Validation**
     - **Validates: Requirements 13.5**
 

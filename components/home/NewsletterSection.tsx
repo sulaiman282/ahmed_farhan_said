@@ -92,7 +92,7 @@ export default function NewsletterSection({
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                className="px-8 py-4 bg-white dark:bg-gray-100 text-primary font-semibold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
               >
                 {status === 'loading' ? (
                   <span className="flex items-center justify-center">

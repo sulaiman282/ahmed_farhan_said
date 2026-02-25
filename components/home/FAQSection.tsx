@@ -22,10 +22,10 @@ export default function FAQSection({ title, faqs, lang }: FAQSectionProps) {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">{title}</h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
 
@@ -33,14 +33,14 @@ export default function FAQSection({ title, faqs, lang }: FAQSectionProps) {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:border-primary transition-colors"
+              className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:border-primary transition-colors"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                 aria-expanded={openIndex === index}
               >
-                <span className="font-semibold text-lg pr-4">{faq.question}</span>
+                <span className="font-semibold text-lg pr-4 dark:text-white">{faq.question}</span>
                 <svg
                   className={`w-6 h-6 text-primary flex-shrink-0 transition-transform ${
                     openIndex === index ? 'rotate-180' : ''
@@ -62,7 +62,7 @@ export default function FAQSection({ title, faqs, lang }: FAQSectionProps) {
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="p-6 pt-0 text-gray-600 leading-relaxed">
+                <div className="p-6 pt-0 text-gray-600 dark:text-gray-300 leading-relaxed">
                   {faq.answer}
                 </div>
               </div>

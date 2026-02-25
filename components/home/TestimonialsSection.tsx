@@ -59,16 +59,16 @@ export default function TestimonialsSection({
   if (!testimonials || testimonials.length === 0) return null;
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">{title}</h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
 
         <div className="max-w-4xl mx-auto relative">
           {/* Testimonial Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
             <div className="flex justify-center mb-6">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -76,7 +76,7 @@ export default function TestimonialsSection({
                   className={`w-6 h-6 ${
                     i < testimonials[currentIndex].rating
                       ? 'text-yellow-400'
-                      : 'text-gray-300'
+                      : 'text-gray-300 dark:text-gray-600'
                   }`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -86,22 +86,22 @@ export default function TestimonialsSection({
               ))}
             </div>
 
-            <blockquote className="text-lg md:text-xl text-gray-700 text-center mb-8 leading-relaxed">
+            <blockquote className="text-lg md:text-xl text-gray-700 dark:text-gray-300 text-center mb-8 leading-relaxed">
               "{testimonials[currentIndex].feedback}"
             </blockquote>
 
             <div className="text-center">
-              <p className="font-semibold text-lg text-gray-900">
+              <p className="font-semibold text-lg text-gray-900 dark:text-white">
                 {testimonials[currentIndex].clientName}
               </p>
-              <p className="text-gray-600">{testimonials[currentIndex].company}</p>
+              <p className="text-gray-600 dark:text-gray-400">{testimonials[currentIndex].company}</p>
             </div>
           </div>
 
           {/* Navigation Arrows */}
           <button
             onClick={goToPrevious}
-            className="absolute top-1/2 -translate-y-1/2 ltr:-left-4 rtl:-right-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+            className="absolute top-1/2 -translate-y-1/2 ltr:-left-4 rtl:-right-4 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all"
             aria-label={lang === 'ar' ? 'السابق' : 'Previous'}
           >
             <svg
@@ -121,7 +121,7 @@ export default function TestimonialsSection({
 
           <button
             onClick={goToNext}
-            className="absolute top-1/2 -translate-y-1/2 ltr:-right-4 rtl:-left-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+            className="absolute top-1/2 -translate-y-1/2 ltr:-right-4 rtl:-left-4 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all"
             aria-label={lang === 'ar' ? 'التالي' : 'Next'}
           >
             <svg
