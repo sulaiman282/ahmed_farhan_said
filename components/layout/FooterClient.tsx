@@ -192,7 +192,7 @@ export default function FooterClient({
               <h4 className="text-white font-semibold text-base mb-4">
                 {lang === 'ar' ? 'تابعنا' : 'Follow Us'}
               </h4>
-              <div className="flex gap-3">
+              <div className="flex gap-3 mb-6">
                 {socialLinks.map((social) => (
                   <a
                     key={social.platform}
@@ -206,6 +206,18 @@ export default function FooterClient({
                   </a>
                 ))}
               </div>
+
+              {/* CR and VAT */}
+              <div className="space-y-2 text-sm">
+                <p className="text-gray-400">
+                  <span className="text-gray-500">{lang === 'ar' ? 'س.ت: ' : 'C.R: '}</span>
+                  <span className="text-gray-300">2050026004-2</span>
+                </p>
+                <p className="text-gray-400">
+                  <span className="text-gray-500">{lang === 'ar' ? 'الرقم الضريبي: ' : 'VAT#: '}</span>
+                  <span className="text-gray-300">310792601000003</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -214,11 +226,16 @@ export default function FooterClient({
         <div className="border-t border-gray-700/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              {/* Copyright */}
-              <p className="text-gray-400 text-sm text-center md:text-start">
-                © {currentYear} {lang === 'ar' ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة' : 'AHMED FARHAN SAID AL-MARSHOUD General Contracting Est.'}
-                {' '}{lang === 'ar' ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}
-              </p>
+              {/* Copyright and Registration */}
+              <div className="text-center md:text-start">
+                <p className="text-gray-400 text-sm">
+                  © {currentYear} {lang === 'ar' ? 'مؤسسة أحمد فرحان سعيد المرشود للمقاولات العامة' : 'AHMED FARHAN SAID AL-MARSHOUD General Contracting Est.'}
+                  {' '}{lang === 'ar' ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}
+                </p>
+                <p className="text-gray-500 text-xs mt-1">
+                  {lang === 'ar' ? 'س.ت: ' : 'C.R: '}2050026004-2 | {lang === 'ar' ? 'الرقم الضريبي: ' : 'VAT#: '}310792601000003
+                </p>
+              </div>
 
               {/* Legal Links */}
               <div className="flex gap-6">
