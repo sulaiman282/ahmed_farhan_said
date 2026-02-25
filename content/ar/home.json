@@ -95,14 +95,11 @@
   "partners": {
     "title": "شركاؤنا الموثوقون",
     "items": [
-      { "name": "شعار عميل 1", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+1" },
-      { "name": "شعار عميل 2", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+2" },
-      { "name": "شعار عميل 3", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+3" },
-      { "name": "شعار عميل 4", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+4" },
-      { "name": "شعار عميل 5", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+5" },
-      { "name": "شعار عميل 6", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+6" },
-      { "name": "شعار عميل 7", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+7" },
-      { "name": "شعار عميل 8", "logo": "https://placehold.co/200x100/cccccc/666666?text=Client+Logo+8" }
+      { "name": "سراكو", "logo": "https://placehold.co/200x100/cccccc/666666?text=SARACO" },
+      { "name": "اس بي جي بي", "logo": "https://placehold.co/200x100/cccccc/666666?text=SBJB" },
+      { "name": "أرامكو", "logo": "https://placehold.co/200x100/cccccc/666666?text=ARAMCO" },
+      { "name": "الباواني", "logo": "https://placehold.co/200x100/cccccc/666666?text=Albawani" },
+      { "name": "ميد أرابيا", "logo": "https://placehold.co/200x100/cccccc/666666?text=MID+Arabia" }
     ]
   },
   "faq": {
